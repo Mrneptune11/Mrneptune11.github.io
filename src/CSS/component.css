@@ -6,15 +6,35 @@
     transition: 0.3s;
     padding: 2rem;
     background-color: rgb(42, 40, 40);
+    border-radius: 10px;
+    max-width: 300px;
+    margin: 0 auto;
+
 }
 
 .project-card .card-img {
     outline :rgb(255, 254, 254) 4px solid;
-    margin : 10px;
+    margin : 10px auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.project-card .card-title {
+    max-width: 100%;
+    height: auto;
+}
+
+.project-card .card-description {
+    max-width: 100%;
+    height: auto;
+}
+
+.project-card-wrapper {
+    display: inline-block;
 }
 
 .project-card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.2);
     scale: 1.02;
 }
 
@@ -35,5 +55,5 @@
 
 /*routing*/ 
 .routing {
-  margin: 100px;
+  margin: 10%;
 }

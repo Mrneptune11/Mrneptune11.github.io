@@ -24,12 +24,11 @@ type ProjectProps = {
 //project card component
 function ProjectCard(projectProps: ProjectProps) {
     return (
-        <CardLink href={projectProps.refSrc}>
+        <CardLink className="project-card-wrapper" href={projectProps.refSrc}>
             <Card className="project-card">
                 <Card.Title>{projectProps.title}</Card.Title>
                 <Card.Body>{projectProps.description}</Card.Body>
                 <Card.Img src={projectProps.imgSrc || "holder.js/100px180"} />
-                <Card.Link href={projectProps.refSrc}></Card.Link>
             </Card>
         </CardLink>
         
