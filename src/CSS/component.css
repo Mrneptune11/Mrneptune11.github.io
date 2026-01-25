@@ -1,13 +1,5 @@
-
+@import url('./style_var.css');
 /*CSS variables*/ 
-
-:root {
-    --primary_color: rgb(0, 150, 147);
-    --highlight_color: rgb(34, 209, 206);
-    --shadow_color: rgba(0, 0, 0, 0.5);
-    --dark_color: rgb(42, 40, 40);
-    --shade_color: #333;
-}
 
 
 /*Project Card styling*/
@@ -18,7 +10,6 @@
     background-color: var(--dark_color);
     border-radius: 10px;
     max-width: 300px;
-    margin: 0 auto;
     color: var(--primary_color)
 
 }
@@ -50,10 +41,15 @@
     color: var(--highlight_color);
     scale: 1.02;
 }
+
+.project-card:hover img {
+    outline :var(--highlight_color) 4px solid;
+}
 /*//////////////////////////////////////////////////////////*/
 
 /*NavBar styling*/
 .navbar {
+    z-index: 1000;
     display: flex;
     background-color: #333;
     overflow: hidden;
@@ -61,21 +57,29 @@
     width: 100%;
     left: 0;
     top: 0; 
-    min-height: 10%;;
+    min-height: 10%;
+    align-items: left;
 }
 
 .navbar a {
+    flex: 1;
     color: var(--primary_color);
-    padding: 20px 20px;
+    padding: 1% 1%;
     text-align: center;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 1.5rem;
+    transition: 0.3s;
 }
 
 .navbar a:hover {
     background-color: var(--dark_color);
     color: var(--highlight_color);
     text-decoration: underline;
+    scale: 1.05;
+}
+
+.navbar:hover {
+    box-shadow: 0 8px 10px 0 var(--highlight_color);
 }
 /*//////////////////////////////////////////////////////////*/
 

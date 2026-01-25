@@ -1,0 +1,7 @@
+:root {
+    --primary_color: rgb(10, 177, 175);
+    --highlight_color: rgb(34, 209, 206);
+    --shadow_color: rgba(0, 0, 0, 0.5);
+    --dark_color: rgb(42, 40, 40);
+    --shade_color: #333;
+}
