@@ -1,4 +1,4 @@
-//This is the home page of my very cool portfoilio wow
+//This is the home page of my very cool portfolio wow
 
 //CSS imports
 import '../../CSS/app.css'

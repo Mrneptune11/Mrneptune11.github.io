@@ -1,4 +1,6 @@
-@import url('./style_var.css');
+/*Styles the root app*/
+
+@import url('./style_var.css'); /*Import CSS variables and imports*/
 
 #root {
   max-width: none;

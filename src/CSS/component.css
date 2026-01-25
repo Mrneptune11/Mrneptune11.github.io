@@ -1,5 +1,6 @@
-@import url('./style_var.css');
-/*CSS variables*/ 
+/*Styles custom react components*/
+
+@import url('./style_var.css'); /*Import CSS variables and imports*/
 
 
 /*Project Card styling*/

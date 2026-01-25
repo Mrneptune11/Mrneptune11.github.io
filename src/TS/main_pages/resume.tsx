@@ -1,4 +1,9 @@
+//my resume page
 
+//CSS imports
+import '../../CSS/app.css';
+
+//asset imports
 import resumePDF from '../../assets/pdf/resume.pdf';
 
 function Resume() {

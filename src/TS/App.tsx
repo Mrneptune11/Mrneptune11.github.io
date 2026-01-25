@@ -4,6 +4,7 @@
 import { BrowserRouter } from "react-router-dom";
 import { NavBar, ScrollToTop } from "./components/component";
 
+//routing import
 import Routing from "./routes";
 
 function App() {
