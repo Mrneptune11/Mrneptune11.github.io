@@ -1,10 +1,17 @@
+//App page
+
+//library imports
 import { BrowserRouter } from "react-router-dom";
-import { NavBar } from "./components/component";
+import { NavBar, ScrollToTop } from "./components/component";
+
 import Routing from "./routes";
 
 function App() {
+
+
     return (
         <BrowserRouter>
+            <ScrollToTop />
             <NavBar />
             <div className = "routing">
                 <Routing />
@@ -13,5 +20,8 @@ function App() {
         </BrowserRouter>
     );
 }
+
+
+
 
 export default App;

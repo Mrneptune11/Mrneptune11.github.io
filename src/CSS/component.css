@@ -52,13 +52,14 @@
     z-index: 1000;
     display: flex;
     background-color: #333;
-    overflow: hidden;
     position: fixed; 
     width: 100%;
     left: 0;
     top: 0; 
     min-height: 10%;
-    align-items: left;
+    align-items: center;
+    box-sizing: border-box;
+    
 }
 
 .navbar a {
@@ -75,7 +76,9 @@
     background-color: var(--dark_color);
     color: var(--highlight_color);
     text-decoration: underline;
-    scale: 1.05;
+    scale: .98;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px var(--highlight_color);
 }
 
 .navbar:hover {

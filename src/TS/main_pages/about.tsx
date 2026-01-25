@@ -1,10 +1,11 @@
-function Projects() {
+function About() {
 
     return (
-        <>
-        </>
+        <div className="page">
+            <h1 className="page-title">About</h1>
+        </div>
     )
 }
 
 
-export default Projects
+export default About
