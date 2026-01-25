@@ -1,19 +1,30 @@
 
+/*CSS variables*/ 
+
+:root {
+    --primary_color: rgb(0, 150, 147);
+    --highlight_color: rgb(34, 209, 206);
+    --shadow_color: rgba(0, 0, 0, 0.5);
+    --dark_color: rgb(42, 40, 40);
+    --shade_color: #333;
+}
+
 
 /*Project Card styling*/
 .project-card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px 0 var(--shadow_color);
     transition: 0.3s;
     padding: 2rem;
-    background-color: rgb(42, 40, 40);
+    background-color: var(--dark_color);
     border-radius: 10px;
     max-width: 300px;
     margin: 0 auto;
+    color: var(--primary_color)
 
 }
 
 .project-card .card-img {
-    outline :rgb(255, 254, 254) 4px solid;
+    outline :var(--primary_color) 4px solid;
     margin : 10px auto;
     max-width: 100%;
     height: auto;
@@ -22,6 +33,7 @@
 .project-card .card-title {
     max-width: 100%;
     height: auto;
+    font: bold;
 }
 
 .project-card .card-description {
@@ -34,26 +46,43 @@
 }
 
 .project-card:hover {
-    box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 10px 0 var(--highlight_color);
+    color: var(--highlight_color);
     scale: 1.02;
 }
+/*//////////////////////////////////////////////////////////*/
 
 /*NavBar styling*/
 .navbar {
     display: flex;
     background-color: #333;
     overflow: hidden;
+    position: fixed; 
+    width: 100%;
+    left: 0;
+    top: 0; 
+    min-height: 10%;;
 }
 
 .navbar a {
-    color: rgb(0, 150, 147);
-    padding: 14px 20px;
+    color: var(--primary_color);
+    padding: 20px 20px;
     text-align: center;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 24px;
 }
+
+.navbar a:hover {
+    background-color: var(--dark_color);
+    color: var(--highlight_color);
+    text-decoration: underline;
+}
+/*//////////////////////////////////////////////////////////*/
 
 /*routing*/ 
 .routing {
-  margin: 10%;
+    margin-top: 5%;
+  margin-left: 10%;
+  margin-bottom: 10%;
+  margin-right: 10%;
 }
