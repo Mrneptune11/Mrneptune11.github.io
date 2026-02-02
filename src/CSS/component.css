@@ -82,6 +82,9 @@
     box-shadow: 1px 1px 1px 1px var(--highlight_color);
 }
 
+/*//////////////////////////////////////////////////////////*/
+
+/*SocialBar styling*/
 .socialbar {
     display: flex;
     justify-content: center;
@@ -90,13 +93,10 @@
     transition: 0.3s;
 }
 
-.socialbar a img {
-    color: var(--primary_color);
-}
-
 .socialbar a:hover {
     scale: 1.05;
 }
+
 /*//////////////////////////////////////////////////////////*/
 
 /*routing*/ 
@@ -106,3 +106,5 @@
   margin-bottom: 10%;
   margin-right: 10%;
 }
+
+/*//////////////////////////////////////////////////////////*/

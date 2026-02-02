@@ -76,12 +76,12 @@ function SocialBar() {
                 <a href="https://www.linkedin.com/in/sebastian-lanz-53167b256" >
                     <img src= {linkedinIcon} alt="Link to my Linkedin" width="60" height="60"/>
                 </a>
-                <a href="" >
+                <a href="https://mr-neptune.itch.io/" >
                     <img src= {itchIcon} alt="Link to my itch.io page" width="60" height="60"/>
                 </a>
-                <a href="" >
+                <a href="mailto:sebastianlanz301@gmail.com" >
                     <img src= {emailIcon} alt="Link to my email" width="60" height="60"/>
-                    </a>
+                </a>
         </div>
     )
 }
