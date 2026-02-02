@@ -24,10 +24,7 @@ function Home() {
         imgSrc={networkJamImage} refSrc="https://www.youtube.com/watch?v=dQw4w9WgXcQ" />
       <ProjectCard title="Network Jam!" description="This is a sample project description." 
         imgSrc={networkJamImage} refSrc="https://www.youtube.com/watch?v=dQw4w9WgXcQ" />
-      <ProjectCard title="Network Jam!" description="This is a sample project description." 
-        imgSrc={networkJamImage} refSrc="https://www.youtube.com/watch?v=dQw4w9WgXcQ" />
       </Container>
-
     </div>
   )
 }

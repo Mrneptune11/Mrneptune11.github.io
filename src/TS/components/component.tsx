@@ -3,12 +3,18 @@
 //library imports
 import { Card, CardLink } from "react-bootstrap"
 import { Link, useLocation } from "react-router-dom"
+
 //CSS imports
 import '../../CSS/component.css'
 
 //Router import
 import "../routes.tsx"
 import { useEffect } from "react"
+
+//Asset imports
+import linkedinIcon from "../../assets/link_icons/linkedin-app-white-icon.svg" 
+import emailIcon from "../../assets/link_icons/email-icon-white.svg"
+import itchIcon from "../../assets/link_icons/itchio-logo-white.svg"
 
 
 //PROJECT CARD COMPONENT///////////////////////////////////////////////////////////////////
@@ -47,7 +53,7 @@ function TextBlurb() {
 
 //NAV BAR COMPONENT////////////////////////////////////////////////////////////////////////
 
-//persisten navigation bar at the top of the page
+//persistent navigation bar at the top of the page
 function NavBar() {
     return (
         <nav className="navbar">
@@ -56,6 +62,27 @@ function NavBar() {
             <Link to="/about">About</Link>
             <Link to="/resume">Resume</Link>
         </nav>
+    )
+}
+///////////////////////////////////////////////////////////////////////////////////////////
+
+
+//SOCIAL BAR COMPONENT////////////////////////////////////////////////////////////////////////
+
+//persistent navigation bar at the top of the page
+function SocialBar() {
+    return (
+        <div className="socialbar">
+                <a href="https://www.linkedin.com/in/sebastian-lanz-53167b256" >
+                    <img src= {linkedinIcon} alt="Link to my Linkedin" width="60" height="60"/>
+                </a>
+                <a href="" >
+                    <img src= {itchIcon} alt="Link to my itch.io page" width="60" height="60"/>
+                </a>
+                <a href="" >
+                    <img src= {emailIcon} alt="Link to my email" width="60" height="60"/>
+                    </a>
+        </div>
     )
 }
 ///////////////////////////////////////////////////////////////////////////////////////////
@@ -71,4 +98,4 @@ function ScrollToTop() {
 }
 ///////////////////////////////////////////////////////////////////////////////////////////
 
-export { ProjectCard, NavBar, ScrollToTop, TextBlurb };
+export { ProjectCard, NavBar, ScrollToTop, TextBlurb, SocialBar };

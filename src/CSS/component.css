@@ -60,7 +60,7 @@
     min-height: 10%;
     align-items: center;
     box-sizing: border-box;
-    
+    box-shadow: 0 2px 3px 0 var(--highlight_color);
 }
 
 .navbar a {
@@ -82,8 +82,20 @@
     box-shadow: 1px 1px 1px 1px var(--highlight_color);
 }
 
-.navbar:hover {
-    box-shadow: 0 8px 10px 0 var(--highlight_color);
+.socialbar {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1% 1%;
+    transition: 0.3s;
+}
+
+.socialbar a img {
+    color: var(--primary_color);
+}
+
+.socialbar a:hover {
+    scale: 1.05;
 }
 /*//////////////////////////////////////////////////////////*/
 
