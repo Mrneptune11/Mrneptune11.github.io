@@ -93,7 +93,15 @@
     transition: 0.3s;
 }
 
-.socialbar a:hover {
+.socialicon{
+    transition: .3;
+    fill: var(--primary_color);
+    width: 60px;
+    height: 60px;
+}
+
+.socialicon:hover {
+    fill: var(--highlight_color);
     scale: 1.05;
 }
 

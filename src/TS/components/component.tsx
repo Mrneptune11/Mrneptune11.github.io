@@ -12,9 +12,7 @@ import "../routes.tsx"
 import { useEffect } from "react"
 
 //Asset imports
-import linkedinIcon from "../../assets/link_icons/linkedin-app-white-icon.svg" 
-import emailIcon from "../../assets/link_icons/email-icon-white.svg"
-import itchIcon from "../../assets/link_icons/itchio-logo-white.svg"
+import { EmailIcon, LinkedInIcon, ItchIcon } from "./svg_embeds.tsx"
 
 
 //PROJECT CARD COMPONENT///////////////////////////////////////////////////////////////////
@@ -74,13 +72,13 @@ function SocialBar() {
     return (
         <div className="socialbar">
                 <a href="https://www.linkedin.com/in/sebastian-lanz-53167b256" >
-                    <img src= {linkedinIcon} alt="Link to my Linkedin" width="60" height="60"/>
+                    <ItchIcon/>
                 </a>
                 <a href="https://mr-neptune.itch.io/" >
-                    <img src= {itchIcon} alt="Link to my itch.io page" width="60" height="60"/>
+                    <LinkedInIcon/>
                 </a>
                 <a href="mailto:sebastianlanz301@gmail.com" >
-                    <img src= {emailIcon} alt="Link to my email" width="60" height="60"/>
+                    <EmailIcon/>
                 </a>
         </div>
     )
