@@ -12,7 +12,7 @@ import "../routes.tsx"
 import { useEffect } from "react"
 
 //Asset imports
-import { EmailIcon, LinkedInIcon, ItchIcon } from "./svg_embeds.tsx"
+import { EmailIcon, LinkedInIcon, ItchIcon, HomeIcon, AboutIcon, ProjectIcon, ResumeIcon } from "./svg_embeds.tsx"
 import header from "../../assets/pixel/Header.png"
 
 
@@ -58,10 +58,22 @@ function NavBar() {
         <div>
             <nav className="navbar">
                     <img className = "myheader" src = {header}/> 
-                    <Link to="/">Home</Link>
-                    <Link to="/projects">Projects</Link>
-                    <Link to="/about">About</Link>
-                    <Link to="/resume">Resume</Link>
+                    <Link to="/">
+                        <HomeIcon/>
+                        Home
+                    </Link>
+                    <Link to="/projects">
+                        <ProjectIcon/>
+                        Projects
+                    </Link>
+                    <Link to="/about">
+                        <AboutIcon/>
+                        About  
+                    </Link>
+                    <Link to="/resume">
+                        <ResumeIcon/>
+                        Resume
+                    </Link>
             </nav>
         </div>
     )
