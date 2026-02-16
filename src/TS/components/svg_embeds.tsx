@@ -3,6 +3,7 @@
 //CSS Imports
 import '../../CSS/component.css'
 
+//Email icon
 function EmailIcon() {
     return (
         <svg className="socialicon" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 344 344">
@@ -12,6 +13,7 @@ function EmailIcon() {
     )
 }
 
+//LinkedIn Icon
 function LinkedInIcon() {
     return (
         <svg className="socialicon" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 245.37069 220.73612">
@@ -20,6 +22,7 @@ function LinkedInIcon() {
     )
 }
 
+//Itch.io Icon 
 function ItchIcon() {
 
     return (
@@ -28,7 +31,5 @@ function ItchIcon() {
         </svg>
     )
 }
-
-
 
 export { EmailIcon, LinkedInIcon, ItchIcon};

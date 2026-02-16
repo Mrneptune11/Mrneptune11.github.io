@@ -13,6 +13,7 @@ import { useEffect } from "react"
 
 //Asset imports
 import { EmailIcon, LinkedInIcon, ItchIcon } from "./svg_embeds.tsx"
+import header from "../../assets/pixel/Header.png"
 
 
 //PROJECT CARD COMPONENT///////////////////////////////////////////////////////////////////
@@ -54,12 +55,15 @@ function TextBlurb() {
 //persistent navigation bar at the top of the page
 function NavBar() {
     return (
-        <nav className="navbar">
-            <Link to="/">Home</Link>
-            <Link to="/projects">Projects</Link>
-            <Link to="/about">About</Link>
-            <Link to="/resume">Resume</Link>
-        </nav>
+        <div>
+            <nav className="navbar">
+                    <img className = "myheader" src = {header}/> 
+                    <Link to="/">Home</Link>
+                    <Link to="/projects">Projects</Link>
+                    <Link to="/about">About</Link>
+                    <Link to="/resume">Resume</Link>
+            </nav>
+        </div>
     )
 }
 ///////////////////////////////////////////////////////////////////////////////////////////

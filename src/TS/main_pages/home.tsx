@@ -18,12 +18,12 @@ function Home() {
     <div className= "page">
       <h1 className="page-title">Home</h1>
       <Container className = "project-container">
-      <ProjectCard title="Network Jam!" description="This is a sample project description." 
-        imgSrc={networkJamImage} refSrc="https://www.youtube.com/watch?v=dQw4w9WgXcQ" />
-      <ProjectCard title="Network Jam!" description="This is a sample project description." 
-        imgSrc={networkJamImage} refSrc="https://www.youtube.com/watch?v=dQw4w9WgXcQ" />
-      <ProjectCard title="Network Jam!" description="This is a sample project description." 
-        imgSrc={networkJamImage} refSrc="https://www.youtube.com/watch?v=dQw4w9WgXcQ" />
+        <ProjectCard title="Network Jam!" description="This is a sample project description." 
+          imgSrc={networkJamImage} refSrc="https://www.youtube.com/watch?v=dQw4w9WgXcQ" />
+        <ProjectCard title="Network Jam!" description="This is a sample project description." 
+          imgSrc={networkJamImage} refSrc="https://www.youtube.com/watch?v=dQw4w9WgXcQ" />
+        <ProjectCard title="Network Jam!" description="This is a sample project description." 
+          imgSrc={networkJamImage} refSrc="https://www.youtube.com/watch?v=dQw4w9WgXcQ" />
       </Container>
     </div>
   )
