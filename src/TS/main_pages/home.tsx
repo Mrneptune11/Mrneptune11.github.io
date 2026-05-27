@@ -10,7 +10,7 @@ import { TextBlurb } from '../components/component.tsx'
 import { Container } from 'react-bootstrap'
 
 //card importants
-import { NetworkJamCard, MyndspellCard } from '../components/instances.tsx'
+import { NetworkJamCard, MyndspellCard, ATWWDCard } from '../components/instances.tsx'
 
 
 //home page contents
@@ -27,6 +27,7 @@ function Home() {
       <Container className = "project-container">
         <NetworkJamCard/>
         <MyndspellCard/>
+        <ATWWDCard/>
       </Container>
     </div>
   )
