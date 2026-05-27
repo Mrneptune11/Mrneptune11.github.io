@@ -3,6 +3,18 @@
 @import url('./style_var.css'); /*Import CSS variables and imports*/
 
 
+/*Text Blurb styling*/
+
+.text-blurb {
+    padding-bottom: 2%;
+}
+
+.text-section {
+        font-size: clamp(.5rem, var(--base_font_size), 2rem);
+}
+
+/*//////////////////////////////////////////////////////////*/
+
 /*Project Card styling*/
 .project-card {
     box-shadow: 0 4px 8px 0 var(--shadow_color);

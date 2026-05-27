@@ -9,4 +9,6 @@
     --shadow_color: rgba(0, 0, 0, 0.5);
     --dark_color: rgb(42, 40, 40);
     --shade_color: #333;
+
+    --base_font_size: 1.1vw;
 }

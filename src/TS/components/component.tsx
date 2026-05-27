@@ -44,9 +44,78 @@ function ProjectCard(projectProps: ProjectProps) {
 
 //TEXT BLURB COMPONENT/////////////////////////////////////////////////////////////////////
 
+type TextBlurbProps = {
+content:string,
+backgroundColor?:string,
+textColor?:string,
+widthRatio:string, //percentage of the dom 
+}
+
 //reusable text box component
-function TextBlurb() {
-    return null;
+function TextBlurb(textBlurbProps: TextBlurbProps) {
+
+const dict:Map<string,string> = highLighter(textBlurbProps.content)
+
+    return ( 
+        <div
+            className="text-blurb"
+            style={{backgroundColor: textBlurbProps.backgroundColor,
+                color: textBlurbProps.textColor,
+                width: textBlurbProps.widthRatio,
+            }}>
+
+            {Array.from(dict.entries()).map(([text, tag], index) => (
+                <span className = "text-section" key={index} style={{color: tag || textBlurbProps.textColor}}>
+                    {text}
+                </span>
+            ))}
+        </div>
+    
+    );
+}
+
+//used to highlight specific parts of text in a color using a simple tag system : "[color]text[/]"
+function highLighter(text:string):Map<string,string> {
+    const dict:Map<string,string> = new Map<string, string>();
+
+    let textReader:string = "";
+    let tagReader:string = "";
+    
+    let colorRecording:boolean = false;
+    let textRecording:boolean = true;
+
+    for (let i:number = 0; i < text.length; i++){
+        const ch:string = text[i];
+
+        //tag checkets
+        if (ch === "[") {
+            dict.set(textReader, tagReader);
+
+            colorRecording = true;
+            textRecording = false;
+            textReader = "";
+            tagReader = "";
+            continue;
+        }
+        if (ch === "]") {
+            colorRecording = false;
+            textRecording = true
+            continue;
+        }
+
+        //add tag when reading tag
+        if (colorRecording) {
+            tagReader += ch;
+        }
+
+        //add text when reading plain text
+        if (textRecording)
+            textReader += ch;
+    }
+
+    dict.set(textReader, tagReader); //adding the final text and tag
+
+    return dict;
 }
 ///////////////////////////////////////////////////////////////////////////////////////////
 
@@ -112,4 +181,4 @@ function ScrollToTop() {
 }
 ///////////////////////////////////////////////////////////////////////////////////////////
 
-export { ProjectCard, NavBar, ScrollToTop, TextBlurb, SocialBar };
+export { ProjectCard, NavBar, ScrollToTop, TextBlurb, SocialBar};
