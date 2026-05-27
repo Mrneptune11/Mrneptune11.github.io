@@ -1,7 +1,7 @@
 //TSX file dedicated to storing resuable components across the site
 
 //library imports
-import { Card, CardLink } from "react-bootstrap"
+import { Card, CardLink, Container } from "react-bootstrap"
 import { Link, useLocation } from "react-router-dom"
 
 //CSS imports
@@ -25,6 +25,13 @@ type ProjectProps = {
   description:string,
   imgSrc?:string,
   refSrc:string,
+  tagDict:Map<string,string>
+}
+
+//props for tags under project cards
+type TagProps = {
+    text:string,
+    bgColor:string, 
 }
 
 //component function
@@ -35,11 +42,25 @@ function ProjectCard(projectProps: ProjectProps) {
                 <Card.Title>{projectProps.title}</Card.Title>
                 <Card.Body>{projectProps.description}</Card.Body>
                 <Card.Img src={projectProps.imgSrc || "holder.js/100px180"} />
+
+             <Container className = 'tag-container'>
+                                {Array.from(projectProps.tagDict.entries()).map(([text, color], index) => (
+                    <ProjectTag key = {index} bgColor={color} text = {text}>
+                    </ProjectTag>
+                ))}
+                </Container>
             </Card>
         </CardLink>
         
     )
 }
+
+function ProjectTag(tagProps:TagProps) {
+    return (
+        <div className='project-tag' style={{backgroundColor: tagProps.bgColor}}>{tagProps.text}</div>
+    );
+}
+
 ///////////////////////////////////////////////////////////////////////////////////////////
 
 //TEXT BLURB COMPONENT/////////////////////////////////////////////////////////////////////
@@ -179,4 +200,4 @@ function ScrollToTop() {
 }
 ///////////////////////////////////////////////////////////////////////////////////////////
 
-export { ProjectCard, NavBar, ScrollToTop, TextBlurb, SocialBar};
+export { ProjectCard, NavBar, ScrollToTop, TextBlurb, SocialBar,ProjectTag};

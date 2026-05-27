@@ -24,8 +24,7 @@
     background-color: var(--dark_color);
     border-radius: 10px;
     max-width: 300px;
-    color: var(--primary_color)
-
+    color: var(--primary_color);
 }
 
 .project-card .card-img {
@@ -64,6 +63,19 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+.tag-container {
+    display: flex;
+}
+
+.project-tag {
+    border-radius: 20px;
+    color: white;
+    font-size: clamp(1vh, .75vw, .8vw);
+    padding-left: 8px;
+    padding-right: 8px;
+
 }
 /*//////////////////////////////////////////////////////////*/
 

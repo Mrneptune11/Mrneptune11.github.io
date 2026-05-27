@@ -4,11 +4,13 @@
 import '../../CSS/app.css'
 
 //component imports 
-import { ProjectCard, TextBlurb } from '../components/component.tsx'
+import { TextBlurb } from '../components/component.tsx'
 
 //asset imports
-import networkJamImage from '../../assets/network_jam.png'
 import { Container } from 'react-bootstrap'
+
+//card importants
+import { NetworkJamCard } from '../components/instances.tsx'
 
 
 //home page contents
@@ -23,12 +25,9 @@ function Home() {
       </Container>
       
       <Container className = "project-container">
-        <ProjectCard title="Network Jam!" description="This is a sample project description." 
-          imgSrc={networkJamImage} refSrc="https://www.youtube.com/watch?v=dQw4w9WgXcQ" />
-        <ProjectCard title="Network Jam!" description="This is a sample project description." 
-          imgSrc={networkJamImage} refSrc="https://www.youtube.com/watch?v=dQw4w9WgXcQ" />
-        <ProjectCard title="Network Jam!" description="This is a sample project description." 
-          imgSrc={networkJamImage} refSrc="https://www.youtube.com/watch?v=dQw4w9WgXcQ" />
+        <NetworkJamCard/>
+        <NetworkJamCard/>
+        <NetworkJamCard/>
       </Container>
     </div>
   )
