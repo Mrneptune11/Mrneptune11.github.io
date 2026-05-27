@@ -94,7 +94,7 @@
 .project-tag {
     border-radius: 20px;
     color: white;
-    font-size: clamp(1vh, .75vw, .8vw);
+    font-size: clamp(1vh, .68vw, .8vw);
     padding: 2px 8px;
 
 }

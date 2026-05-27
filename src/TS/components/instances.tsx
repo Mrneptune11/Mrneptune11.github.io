@@ -43,6 +43,7 @@ function MyndspellCard() {
             ["Godot", softwareColor],
             ["Github", softwareColor],
             ["Jira", softwareColor],
+            ["Wwise", softwareColor],
             ["GDScript", codeColor],
         ])} />
     );
@@ -61,6 +62,22 @@ function ATWWDCard() {
         ])} />
     );
 }
+
+function DigiDivaCard() {
+    return(
+        <ProjectCard title="Myndspell: The Wizard Maze" description="This is a sample project description." 
+          imgSrc={myndspellImage} refSrc="https://jraxen.itch.io/myndspell"
+          tagDict = {new Map<string,string>(
+            [["Programmer", roleColor],
+            ["Producer", roleColor],
+            ["Designer", roleColor],
+            ["Godot", softwareColor],
+            ["Github", softwareColor],
+            ["Jira", softwareColor],
+            ["GDScript", codeColor],
+        ])} />
+    );
+}
 ///////////////////////////////////////////////////////////////////////////////////////////
 
-export {NetworkJamCard, MyndspellCard, ATWWDCard}
+export {NetworkJamCard, MyndspellCard, ATWWDCard, DigiDivaCard}
