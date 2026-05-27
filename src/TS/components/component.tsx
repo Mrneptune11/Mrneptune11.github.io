@@ -40,7 +40,7 @@ function ProjectCard(projectProps: ProjectProps) {
         <CardLink className="project-card-wrapper" href={projectProps.refSrc}>
             <Card className="project-card">
                 <Card.Title>{projectProps.title}</Card.Title>
-                <Card.Body>{projectProps.description}</Card.Body>
+                <Card.Body className="card-description">{projectProps.description}</Card.Body>
                 <Card.Img src={projectProps.imgSrc || "holder.js/100px180"} />
 
              <Container className = 'tag-container'>

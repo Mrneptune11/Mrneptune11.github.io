@@ -20,7 +20,7 @@ const codeColor:string = "Plum"
 
 function NetworkJamCard() {
     return(
-        <ProjectCard title="Network Jam!" description="This is a sample project description." 
+        <ProjectCard title="Network Jam!" description="Deliver network packets through cyberspace and dodge corrupted data." 
           imgSrc={networkJamImage} refSrc="https://tapeknot.itch.io/network-jam"
           tagDict = {new Map<string,string>(
             [["Programmer", roleColor],
@@ -35,7 +35,7 @@ function NetworkJamCard() {
 
 function MyndspellCard() {
     return(
-        <ProjectCard title="Myndspell: The Wizard Maze" description="This is a sample project description." 
+        <ProjectCard title="Myndspell: The Wizard Maze" description="Meet quirky characters and face foes in this world of your own fantasy." 
           imgSrc={myndspellImage} refSrc="https://jraxen.itch.io/myndspell"
           tagDict = {new Map<string,string>(
             [["Programmer", roleColor],
@@ -52,7 +52,7 @@ function MyndspellCard() {
 
 function ATWWDCard() {
     return(
-        <ProjectCard title="And The World Went Dark" description="This is a sample project description." 
+        <ProjectCard title="And The World Went Dark" description="Combat the forces of the darkness as you traverse a dying world." 
           imgSrc={atwwdImage} refSrc="https://docterbuster.itch.io/and-the-world-went-dark"
           tagDict = {new Map<string,string>(
             [["Programmer", roleColor],
@@ -66,12 +66,12 @@ function ATWWDCard() {
 
 function DigiDivaCard() {
     return(
-        <ProjectCard title="DigiDiva" description="This is a sample project description." 
+        <ProjectCard title="DigiDiva" description="As a chronically online influencer grow your fanbase and defend your image." 
           imgSrc={digiDivaImage} refSrc="https://allisonvtnguyen.itch.io/digidiva"
           tagDict = {new Map<string,string>(
             [["Programmer", roleColor],
             ["Audio", roleColor],
-            ["Unreal", softwareColor],
+            ["Unreal Engine", softwareColor],
             ["Github", softwareColor],
             ["C++", codeColor],
             ["Blueprints", codeColor],

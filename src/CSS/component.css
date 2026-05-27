@@ -45,6 +45,7 @@
     color: transparent;
     background-size: 200% 100%;
     animation: shimmer 10s linear infinite;
+    text-decoration: underline;
 
 }
 
@@ -60,6 +61,7 @@
 .project-card .card-description {
     max-width: 100%;
     height: auto;
+    font-size: .8rem;
 }
 
 .project-card-wrapper {
