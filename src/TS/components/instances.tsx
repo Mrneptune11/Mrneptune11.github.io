@@ -17,6 +17,7 @@ import noRestForTheWeatherManImage from "../../assets/title_cards/norestforweath
 import caindyLandImage from '../../assets/title_cards/caindyLand.png'
 import tables4uImage from '../../assets/title_cards/tables4u.png'
 import grabbyGremlinsImage from '../../assets/title_cards/grabbyGremlins.png'
+import trailBlazerImage from '../../assets/title_cards/trailblazer.png'
 
 
 //PROJECT CARD INSTANCES///////////////////////////////////////////////////////////////////
@@ -149,6 +150,20 @@ function CaindyLandCard() {
     );
 }
 
+function GrabbyGremlins() {
+    return(
+        <ProjectCard title="Grabby Gremlins" description="Protect treasure against hordes of gremlins using your trusty vacuum."
+          imgSrc={grabbyGremlinsImage} refSrc= "https://mantisstudios.itch.io/grabby-gremlins"
+          tagDict = {new Map<string,string>(
+            [["Programmer", roleColor],
+            ["Designer", roleColor],
+            ["Unity", softwareColor],
+            ["Github", softwareColor],
+            ["C#", codeColor],
+        ])} />
+    );
+}
+
 function Tables4U() {
     return(
         <ProjectCard title="Tables4U" description="Web application for restaurants and consumers to manage reservations."
@@ -165,20 +180,23 @@ function Tables4U() {
     );
 }
 
-function GrabbyGremlins() {
+function TrailBlazer() {
     return(
-        <ProjectCard title="Grabby Gremlins" description="Protect treasure against hordes of gremlins using your trusty vacuum."
-          imgSrc={grabbyGremlinsImage} refSrc= "https://mantisstudios.itch.io/grabby-gremlins"
+        <ProjectCard title="TrailBlazer" description="Mobile oriented web application for creating and following hiking trails."
+          imgSrc={trailBlazerImage} refSrc= "https://github.com/ZenIsBestWolf/cs4241-final"
           tagDict = {new Map<string,string>(
             [["Programmer", roleColor],
-            ["Designer", roleColor],
-            ["Unity", softwareColor],
-            ["Github", softwareColor],
-            ["C#", codeColor],
+            ["React", softwareColor],
+            ["MongoDB", softwareColor],
+            ["AWS", softwareColor],
+            ["Bootstrap", softwareColor],
+            ["Auth0", softwareColor],
+            ["Typescript", codeColor],
+            ["SCSS", codeColor],
         ])} />
     );
 }
 ///////////////////////////////////////////////////////////////////////////////////////////
 
 export {NetworkJamCard, MyndspellCard, ATWWDCard, DigiDivaCard, JamCorpCard, ShinobiDuelCard, 
-    NoRestForTheWeatherManCard, CaindyLandCard, Tables4U, GrabbyGremlins}
+    NoRestForTheWeatherManCard, CaindyLandCard, Tables4U, GrabbyGremlins, TrailBlazer}

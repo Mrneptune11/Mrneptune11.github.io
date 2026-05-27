@@ -6,7 +6,7 @@ import { Container } from 'react-bootstrap'
 //card importants
 import { NetworkJamCard, MyndspellCard, ATWWDCard, DigiDivaCard, JamCorpCard, 
         CaindyLandCard, ShinobiDuelCard, NoRestForTheWeatherManCard, Tables4U,
-        GrabbyGremlins,
+        GrabbyGremlins, TrailBlazer
     } from '../components/instances.tsx'
 
 function Projects() {
@@ -25,6 +25,7 @@ function Projects() {
                     <CaindyLandCard/>
                     <Tables4U/>
                     <GrabbyGremlins/>
+                    <TrailBlazer/>
                 </Container>
         </div>
     )
