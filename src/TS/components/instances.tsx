@@ -14,6 +14,7 @@ import digiDivaImage from '../../assets/title_cards/DigiDiva.png'
 import jamcorp3dImage from '../../assets/title_cards/jamcorp3d.png'
 import shinobiDuelImage from '../../assets/title_cards/shinobiDuel.png'
 import noRestForTheWeatherManImage from "../../assets/title_cards/norestforweatherman.png"
+import caindyLandImage from '../../assets/title_cards/caindyLand.png'
 
 
 //PROJECT CARD INSTANCES///////////////////////////////////////////////////////////////////
@@ -128,6 +129,23 @@ function NoRestForTheWeatherManCard() {
         ])} />
     );
 }
+
+function CaindyLandCard() {
+    return(
+        <ProjectCard title="C(AI)ndy.Land" description="Sick and on the job, help guide the weather where it needs to be."
+          imgSrc={caindyLandImage} refSrc= "https://marvelous-croquembouche-1082a4.netlify.app/"
+          tagDict = {new Map<string,string>(
+            [["Programmer", roleColor],
+            ["Designer", roleColor],
+            ["Svelte", softwareColor],
+            ["Github", softwareColor],
+            ["HTML", codeColor],
+            ["JavaScript", codeColor],
+            ["CSS", codeColor],
+            ["WebGL", codeColor],
+        ])} />
+    );
+}
 ///////////////////////////////////////////////////////////////////////////////////////////
 
-export {NetworkJamCard, MyndspellCard, ATWWDCard, DigiDivaCard, JamCorpCard, ShinobiDuelCard, NoRestForTheWeatherManCard}
+export {NetworkJamCard, MyndspellCard, ATWWDCard, DigiDivaCard, JamCorpCard, ShinobiDuelCard, NoRestForTheWeatherManCard, CaindyLandCard}
