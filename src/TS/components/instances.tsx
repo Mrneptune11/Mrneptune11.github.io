@@ -10,6 +10,7 @@ import { ProjectCard } from '../components/component.tsx'
 import networkJamImage from '../../assets/title_cards/network_jam.png'
 import myndspellImage from '../../assets/title_cards/myndspell.png'
 import atwwdImage from '../../assets/title_cards/atwwd.png'
+import digiDivaImage from '../../assets/title_cards/DigiDiva.png'
 
 
 //PROJECT CARD INSTANCES///////////////////////////////////////////////////////////////////
@@ -41,9 +42,9 @@ function MyndspellCard() {
             ["Producer", roleColor],
             ["Designer", roleColor],
             ["Godot", softwareColor],
+            ["Wwise", softwareColor],
             ["Github", softwareColor],
             ["Jira", softwareColor],
-            ["Wwise", softwareColor],
             ["GDScript", codeColor],
         ])} />
     );
@@ -65,16 +66,15 @@ function ATWWDCard() {
 
 function DigiDivaCard() {
     return(
-        <ProjectCard title="Myndspell: The Wizard Maze" description="This is a sample project description." 
-          imgSrc={myndspellImage} refSrc="https://jraxen.itch.io/myndspell"
+        <ProjectCard title="DigiDiva" description="This is a sample project description." 
+          imgSrc={digiDivaImage} refSrc="https://allisonvtnguyen.itch.io/digidiva"
           tagDict = {new Map<string,string>(
             [["Programmer", roleColor],
-            ["Producer", roleColor],
-            ["Designer", roleColor],
-            ["Godot", softwareColor],
+            ["Audio", roleColor],
+            ["Unreal", softwareColor],
             ["Github", softwareColor],
-            ["Jira", softwareColor],
-            ["GDScript", codeColor],
+            ["C++", codeColor],
+            ["Blueprints", codeColor],
         ])} />
     );
 }
