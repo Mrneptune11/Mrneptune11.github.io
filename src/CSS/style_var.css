@@ -4,11 +4,15 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 
 :root {
+    /*color vars*/
     --primary_color: #0ab1af;
     --highlight_color: #22d1ce;
     --shadow_color: rgba(0, 0, 0, 0.5);
     --dark_color: rgb(42, 40, 40);
     --shade_color: #333;
 
+    /*size vars*/
     --base_font_size: 1.1vw;
+    --text_box_width: 60%
+
 }

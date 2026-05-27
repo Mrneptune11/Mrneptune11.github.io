@@ -48,7 +48,6 @@ type TextBlurbProps = {
 content:string,
 backgroundColor?:string,
 textColor?:string,
-widthRatio:string, //percentage of the dom 
 }
 
 //reusable text box component
@@ -61,7 +60,6 @@ const dict:Map<string,string> = highLighter(textBlurbProps.content)
             className="text-blurb"
             style={{backgroundColor: textBlurbProps.backgroundColor,
                 color: textBlurbProps.textColor,
-                width: textBlurbProps.widthRatio,
             }}>
 
             {Array.from(dict.entries()).map(([text, tag], index) => (

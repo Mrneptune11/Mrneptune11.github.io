@@ -19,7 +19,7 @@ function Home() {
       <h1 className="page-title">Home</h1>
       <Container className = "top-container">
         <TextBlurb content={'Hello! I\'m Sebastian Lanz, aka [#22d1ce]Mr.Neptune[/], and welcome to my website! I\'m a [#22d1ce]game developer[/] and [#22d1ce]full-stack software engineer[/].'} 
-           textColor='white' widthRatio = {'60%'}/>
+           textColor='white'/>
       </Container>
       
       <Container className = "project-container">

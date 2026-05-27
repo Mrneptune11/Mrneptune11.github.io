@@ -7,6 +7,7 @@
 
 .text-blurb {
     padding-bottom: 2%;
+    width: clamp(38vh, var(--text_box_width), 80%);
 }
 
 .text-section {
