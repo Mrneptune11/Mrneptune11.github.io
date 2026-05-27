@@ -15,6 +15,7 @@ import jamcorp3dImage from '../../assets/title_cards/jamcorp3d.png'
 import shinobiDuelImage from '../../assets/title_cards/shinobiDuel.png'
 import noRestForTheWeatherManImage from "../../assets/title_cards/norestforweatherman.png"
 import caindyLandImage from '../../assets/title_cards/caindyLand.png'
+import tables4uImage from '../../assets/title_cards/tables4u.png'
 
 
 //PROJECT CARD INSTANCES///////////////////////////////////////////////////////////////////
@@ -132,7 +133,7 @@ function NoRestForTheWeatherManCard() {
 
 function CaindyLandCard() {
     return(
-        <ProjectCard title="C(AI)ndy.Land" description="Sick and on the job, help guide the weather where it needs to be."
+        <ProjectCard title="C(AI)ndy.Land" description="Procedurally generate 'print and play' game boards with custom rulesets."
           imgSrc={caindyLandImage} refSrc= "https://marvelous-croquembouche-1082a4.netlify.app/"
           tagDict = {new Map<string,string>(
             [["Programmer", roleColor],
@@ -146,6 +147,23 @@ function CaindyLandCard() {
         ])} />
     );
 }
+
+function Tables4U() {
+    return(
+        <ProjectCard title="Tables4U" description="Web application for restaurants and consumers to manage reservations."
+          imgSrc={tables4uImage} refSrc= "https://github.com/Mrneptune11/tables4u"
+          tagDict = {new Map<string,string>(
+            [["Programmer", roleColor],
+            ["React", softwareColor],
+            ["MySQL", softwareColor],
+            ["AWS", softwareColor],
+            ["Tailwind CSS", softwareColor],
+            ["Typescript", codeColor],
+            ["Javascript", codeColor],
+        ])} />
+    );
+}
 ///////////////////////////////////////////////////////////////////////////////////////////
 
-export {NetworkJamCard, MyndspellCard, ATWWDCard, DigiDivaCard, JamCorpCard, ShinobiDuelCard, NoRestForTheWeatherManCard, CaindyLandCard}
+export {NetworkJamCard, MyndspellCard, ATWWDCard, DigiDivaCard, JamCorpCard, ShinobiDuelCard, 
+    NoRestForTheWeatherManCard, CaindyLandCard, Tables4U}
