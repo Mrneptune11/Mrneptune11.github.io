@@ -11,6 +11,7 @@ import networkJamImage from '../../assets/title_cards/network_jam.png'
 import myndspellImage from '../../assets/title_cards/myndspell.png'
 import atwwdImage from '../../assets/title_cards/atwwd.png'
 import digiDivaImage from '../../assets/title_cards/DigiDiva.png'
+import jamcorp3dImage from '../../assets/title_cards/jamcorp3d.png'
 
 
 //PROJECT CARD INSTANCES///////////////////////////////////////////////////////////////////
@@ -78,6 +79,22 @@ function DigiDivaCard() {
         ])} />
     );
 }
+
+function JamCorpCard() {
+    return(
+        <ProjectCard title="JamCorp3D" description="Platform to the beat to take back your stolen jams from evil entrepeneur cats."
+          imgSrc={jamcorp3dImage} refSrc= "https://mustardrift.itch.io/jamcorp3d"
+          tagDict = {new Map<string,string>(
+            [["Programmer", roleColor],
+            ["Designer", roleColor],
+            ["Unreal Engine", softwareColor],
+            ["Wwise", softwareColor],
+            ["Github", softwareColor],
+            ["C++", codeColor],
+            ["Blueprints", codeColor],
+        ])} />
+    );
+}
 ///////////////////////////////////////////////////////////////////////////////////////////
 
-export {NetworkJamCard, MyndspellCard, ATWWDCard, DigiDivaCard}
+export {NetworkJamCard, MyndspellCard, ATWWDCard, DigiDivaCard, JamCorpCard}
