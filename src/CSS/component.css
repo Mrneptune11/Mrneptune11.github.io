@@ -38,14 +38,23 @@
     max-width: 100%;
     height: auto;
     font: bold;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    background: linear-gradient(135deg, var(--primary_color), #aafffe, var(--primary_color));
+    background-clip: text;
+    color: transparent;
+    background-size: 200% 100%;
+    animation: shimmer 10s linear infinite;
+
 }
 
-@keyframes myAnimation {
-  0%   {font-size: 1.5rem;}
-  20%  {font-size: 1rem;}
-  40%  {font-size: 1.5rem;}
-  60% {font-size: 1rem;}
-  80% {font-size: 1.5rem;}
+.project-card .card-title:hover {
+    max-width: 100%;
+    height: auto;
+    font: bold;
+    font-size:1.5rem;
+    color: var(--highlight_color);
+
 }
 
 .project-card .card-description {
@@ -61,6 +70,10 @@
     box-shadow: 0 8px 10px 0 var(--highlight_color);
     color: var(--highlight_color);
     scale: 1.02;
+    
+    & .card-title {
+        color: var(--highlight_color)
+    }
 }
 
 .project-card:hover img {
@@ -176,4 +189,15 @@
   margin-right: 10%;
 }
 
+/*//////////////////////////////////////////////////////////*/
+
+/*special FX*/
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
 /*//////////////////////////////////////////////////////////*/
