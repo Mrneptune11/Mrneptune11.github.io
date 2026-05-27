@@ -16,6 +16,7 @@ import shinobiDuelImage from '../../assets/title_cards/shinobiDuel.png'
 import noRestForTheWeatherManImage from "../../assets/title_cards/norestforweatherman.png"
 import caindyLandImage from '../../assets/title_cards/caindyLand.png'
 import tables4uImage from '../../assets/title_cards/tables4u.png'
+import grabbyGremlinsImage from '../../assets/title_cards/grabbyGremlins.png'
 
 
 //PROJECT CARD INSTANCES///////////////////////////////////////////////////////////////////
@@ -163,7 +164,21 @@ function Tables4U() {
         ])} />
     );
 }
+
+function GrabbyGremlins() {
+    return(
+        <ProjectCard title="Grabby Gremlins" description="Protect treasure against hordes of gremlins using your trusty vacuum."
+          imgSrc={grabbyGremlinsImage} refSrc= "https://mantisstudios.itch.io/grabby-gremlins"
+          tagDict = {new Map<string,string>(
+            [["Programmer", roleColor],
+            ["Designer", roleColor],
+            ["Unity", softwareColor],
+            ["Github", softwareColor],
+            ["C#", codeColor],
+        ])} />
+    );
+}
 ///////////////////////////////////////////////////////////////////////////////////////////
 
 export {NetworkJamCard, MyndspellCard, ATWWDCard, DigiDivaCard, JamCorpCard, ShinobiDuelCard, 
-    NoRestForTheWeatherManCard, CaindyLandCard, Tables4U}
+    NoRestForTheWeatherManCard, CaindyLandCard, Tables4U, GrabbyGremlins}
