@@ -50,8 +50,7 @@ function ProjectCard(projectProps: ProjectProps) {
                 ))}
                 </Container>
             </Card>
-        </CardLink>
-        
+        </CardLink> 
     )
 }
 

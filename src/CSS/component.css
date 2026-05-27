@@ -40,6 +40,14 @@
     font: bold;
 }
 
+@keyframes myAnimation {
+  0%   {font-size: 1.5rem;}
+  20%  {font-size: 1rem;}
+  40%  {font-size: 1.5rem;}
+  60% {font-size: 1rem;}
+  80% {font-size: 1.5rem;}
+}
+
 .project-card .card-description {
     max-width: 100%;
     height: auto;
@@ -66,15 +74,15 @@
 }
 
 .tag-container {
-    display: flex;
+    display:flex;
+    gap: 6px !important;
 }
 
 .project-tag {
     border-radius: 20px;
     color: white;
     font-size: clamp(1vh, .75vw, .8vw);
-    padding-left: 8px;
-    padding-right: 8px;
+    padding: 2px 8px;
 
 }
 /*//////////////////////////////////////////////////////////*/
