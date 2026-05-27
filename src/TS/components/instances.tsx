@@ -13,6 +13,7 @@ import atwwdImage from '../../assets/title_cards/atwwd.png'
 import digiDivaImage from '../../assets/title_cards/DigiDiva.png'
 import jamcorp3dImage from '../../assets/title_cards/jamcorp3d.png'
 import shinobiDuelImage from '../../assets/title_cards/shinobiDuel.png'
+import noRestForTheWeatherManImage from "../../assets/title_cards/norestforweatherman.png"
 
 
 //PROJECT CARD INSTANCES///////////////////////////////////////////////////////////////////
@@ -100,7 +101,7 @@ function JamCorpCard() {
 
 function ShinobiDuelCard() {
     return(
-        <ProjectCard title="Shinobi Duel" description="Figh as a ninja and battle opponents to the death in procedural arenas."
+        <ProjectCard title="Shinobi Duel" description="Fight as a ninja and battle opponents to the death in procedural arenas."
           imgSrc={shinobiDuelImage} refSrc= "https://mr-neptune.itch.io/shinobi-duel"
           tagDict = {new Map<string,string>(
             [["Programmer", roleColor],
@@ -113,6 +114,20 @@ function ShinobiDuelCard() {
         ])} />
     );
 }
+
+function NoRestForTheWeatherManCard() {
+    return(
+        <ProjectCard title="No Rest for the Weatherman" description="Sick and on the job, help guide the weather where it needs to be."
+          imgSrc={noRestForTheWeatherManImage} refSrc= "https://gabe-taylor.itch.io/no-rest-for-the-weatherman"
+          tagDict = {new Map<string,string>(
+            [["Programmer", roleColor],
+            ["Designer", roleColor],
+            ["Godot", softwareColor],
+            ["Github", softwareColor],
+            ["GDScript", codeColor],
+        ])} />
+    );
+}
 ///////////////////////////////////////////////////////////////////////////////////////////
 
-export {NetworkJamCard, MyndspellCard, ATWWDCard, DigiDivaCard, JamCorpCard, ShinobiDuelCard}
+export {NetworkJamCard, MyndspellCard, ATWWDCard, DigiDivaCard, JamCorpCard, ShinobiDuelCard, NoRestForTheWeatherManCard}
