@@ -12,6 +12,7 @@ import myndspellImage from '../../assets/title_cards/myndspell.png'
 import atwwdImage from '../../assets/title_cards/atwwd.png'
 import digiDivaImage from '../../assets/title_cards/DigiDiva.png'
 import jamcorp3dImage from '../../assets/title_cards/jamcorp3d.png'
+import shinobiDuelImage from '../../assets/title_cards/shinobiDuel.png'
 
 
 //PROJECT CARD INSTANCES///////////////////////////////////////////////////////////////////
@@ -58,6 +59,7 @@ function ATWWDCard() {
           tagDict = {new Map<string,string>(
             [["Programmer", roleColor],
             ["Godot", softwareColor],
+            ["Yarn Spinner", softwareColor],
             ["Github", softwareColor],
             ["GDScript", codeColor],
             ["C#", codeColor],
@@ -95,6 +97,22 @@ function JamCorpCard() {
         ])} />
     );
 }
+
+function ShinobiDuelCard() {
+    return(
+        <ProjectCard title="Shinobi Duel" description="Figh as a ninja and battle opponents to the death in procedural arenas."
+          imgSrc={shinobiDuelImage} refSrc= "https://mr-neptune.itch.io/shinobi-duel"
+          tagDict = {new Map<string,string>(
+            [["Programmer", roleColor],
+            ["Artist", roleColor],
+            ["Designer", roleColor],
+            ["Custom Engine", softwareColor],
+            ["Github", softwareColor],
+            ["C++", codeColor],
+            ["SFML", codeColor],
+        ])} />
+    );
+}
 ///////////////////////////////////////////////////////////////////////////////////////////
 
-export {NetworkJamCard, MyndspellCard, ATWWDCard, DigiDivaCard, JamCorpCard}
+export {NetworkJamCard, MyndspellCard, ATWWDCard, DigiDivaCard, JamCorpCard, ShinobiDuelCard}
