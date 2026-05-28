@@ -1,7 +1,7 @@
 //App page
 
 //library imports
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 import { NavBar, ScrollToTop, SocialBar} from "./components/component";
 
 //routing import
@@ -11,7 +11,7 @@ function App() {
 
 
     return (
-        <BrowserRouter>
+        <HashRouter>
             <ScrollToTop />
             <NavBar />
             <div className = "routing">
@@ -19,7 +19,7 @@ function App() {
             </div>
             <SocialBar/>
             
-        </BrowserRouter>
+        </HashRouter>
     );
 }
 
