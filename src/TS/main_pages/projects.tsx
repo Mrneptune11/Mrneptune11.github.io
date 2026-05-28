@@ -36,6 +36,7 @@ function Projects() {
                     <HappyHelpersCard/>
                     <ThymeTimeCard/>
                     <ProjectSpookems/>
+                    <ProjectSpookems/>
                 </Container>
         </div>
     )
