@@ -44,6 +44,7 @@ type MetaTag =
   | "digital"
   | "tabletop"
   | "application"
+  | "other"
 
 //component function
 function ProjectCard(projectProps: ProjectProps) {

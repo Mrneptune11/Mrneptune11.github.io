@@ -20,6 +20,8 @@ import grabbyGremlinsImage from '../../assets/title_cards/grabbyGremlins.png'
 import trailBlazerImage from '../../assets/title_cards/trailblazer.png'
 import projectUnwarmingImage from '../../assets/title_cards/projectUnwarming.png'
 import bizarreBazaarImage from '../../assets/title_cards/bizarreBizarre.png'
+import curioCabinetImage from '../../assets/title_cards/curiosCabinet.png'
+import legendOfTheTynnImage from "../../assets/title_cards/legendOfTheTynn.png"
 
 //Color Constants///////////////////////////////////////////////////////////////////
 const roleColor:string = "MediumSeaGreen"
@@ -237,12 +239,38 @@ function BizarreBazaarCard() {
             [["Designer", roleColor],
             ["Writer", roleColor],
         ])} 
-            metaTags={["application"]} />  
+            metaTags={["tabletop"]} />  
     );
 }
+
+function CuriosCabinetCard() {
+    return(
+        <ProjectCard title="Curio's Cabinet" description="Proptotype for a narrative and puzzle driven 'escape room' in a cabinet."
+          imgSrc={curioCabinetImage} refSrc= ""
+          tagDict = {new Map<string,string>(
+            [["Designer", roleColor],
+            ["Artist", roleColor],
+        ])} 
+            metaTags={["other"]} />  
+    );
+}
+
+function LegendOfTheTynnCard() {
+    return(
+        <ProjectCard title="The Legend of the Tynn" description="A 2024 ARG about a cryptid stealing items from a university."
+          imgSrc={legendOfTheTynnImage} refSrc= ""
+          tagDict = {new Map<string,string>(
+            [["Programmer", roleColor],
+            ["Artist", roleColor],
+            ["Designer", roleColor],
+        ])} 
+            metaTags={["other"]} />  
+    );
+}
+
 ///////////////////////////////////////////////////////////////////////////////////////////
 
 export {NetworkJamCard, MyndspellCard, ATWWDCard, DigiDivaCard, JamCorpCard, ShinobiDuelCard, 
     NoRestForTheWeatherManCard, CaindyLandCard, Tables4UCard, GrabbyGremlinsCard, TrailBlazerCard,
-    ProjectUnwarmingCard, BizarreBazaarCard
+    ProjectUnwarmingCard, BizarreBazaarCard, CuriosCabinetCard, LegendOfTheTynnCard,
 }
