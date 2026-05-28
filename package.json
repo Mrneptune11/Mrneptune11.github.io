@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://MrNeptune11.github.io",
+  "homepage": "https://MrNeptune11.github.io/Mrneptune11.github.io",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
