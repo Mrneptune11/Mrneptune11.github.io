@@ -22,6 +22,10 @@ import projectUnwarmingImage from '../../assets/title_cards/projectUnwarming.png
 import bizarreBazaarImage from '../../assets/title_cards/bizarreBizarre.png'
 import curioCabinetImage from '../../assets/title_cards/curiosCabinet.png'
 import legendOfTheTynnImage from "../../assets/title_cards/legendOfTheTynn.png"
+import cellBreakImage from "../../assets/title_cards/cellBreak.png"
+import happyHelpersImage from "../../assets/title_cards/happyHelpers.png"
+import thymeTimeImage from '../../assets/title_cards/thymeTime.png'
+import projectSpookemsImage from '../../assets/title_cards/projectSpookems.png'
 
 //Color Constants///////////////////////////////////////////////////////////////////
 const roleColor:string = "MediumSeaGreen"
@@ -72,7 +76,7 @@ function ATWWDCard() {
           imgSrc={atwwdImage} refSrc="https://docterbuster.itch.io/and-the-world-went-dark"
           tagDict = {new Map<string,string>(
             [["Programmer", roleColor],
-            ["Godot", softwareColor],
+            ["Godot Mono", softwareColor],
             ["Yarn Spinner", softwareColor],
             ["Github", softwareColor],
             ["GDScript", codeColor],
@@ -181,6 +185,71 @@ function GrabbyGremlinsCard() {
     );
 }
 
+function CellBreakCard() {
+    return(
+        <ProjectCard title="Cell Break" description="As a virus break free of cell jail and cause the highest fever ever."
+          imgSrc={cellBreakImage} refSrc= "https://mr-neptune.itch.io/cell-break"
+          tagDict = {new Map<string,string>(
+            [["Programmer", roleColor],
+            ["Artist", roleColor],
+            ["Designer", roleColor],
+            ["Godot", softwareColor],
+            ["Github", softwareColor],
+            ["GDScript", codeColor],
+        ])} 
+            metaTags={["digital"]} />  
+    );
+}
+
+function HappyHelpersCard() {
+    return(
+        <ProjectCard title="Happy Helpers™" description="Lost in a mysterious plane outside of reality, try to find you way back home."
+          imgSrc={happyHelpersImage} refSrc= "https://mr-neptune.itch.io/happy-helpers"
+          tagDict = {new Map<string,string>(
+            [["Programmer", roleColor],
+            ["Artist", roleColor],
+            ["Writer", roleColor],
+            ["Designer", roleColor],
+            ["Godot", softwareColor],
+            ["Github", softwareColor],
+            ["GDScript", codeColor],
+        ])} 
+            metaTags={["digital"]} />  
+    );
+}
+
+function  ThymeTimeCard() {
+    return(
+        <ProjectCard title="Thyme Time" description="Quickly harvest veggies to make the most delicious meal."
+          imgSrc={thymeTimeImage} refSrc= "https://cjpugs.itch.io/thyme-time"
+          tagDict = {new Map<string,string>(
+            [["Programmer", roleColor],
+            ["Artist", roleColor],
+            ["Designer", roleColor],
+            ["Unity", softwareColor],
+            ["Github", softwareColor],
+            ["C#", codeColor],
+        ])} 
+            metaTags={["digital"]} />  
+    );
+}
+
+function  ProjectSpookems() {
+    return(
+        <ProjectCard title="Project Spookems" description="While trick or treating, find a creepy mansion that surely hides candy inside."
+          imgSrc={projectSpookemsImage} refSrc= "https://pkmnhx43.itch.io/project-spookems"
+          tagDict = {new Map<string,string>(
+            [["Programmer", roleColor],
+            ["Artist", roleColor],
+            ["Designer", roleColor],
+            ["Godot Mono", softwareColor],
+            ["Github", softwareColor],
+            ["C#", codeColor],
+        ])} 
+            metaTags={["digital"]} />  
+    );
+}
+
 function Tables4UCard() {
     return(
         <ProjectCard title="Tables4U" description="Web application for restaurants and consumers to manage reservations."
@@ -271,6 +340,8 @@ function LegendOfTheTynnCard() {
 ///////////////////////////////////////////////////////////////////////////////////////////
 
 export {NetworkJamCard, MyndspellCard, ATWWDCard, DigiDivaCard, JamCorpCard, ShinobiDuelCard, 
-    NoRestForTheWeatherManCard, CaindyLandCard, Tables4UCard, GrabbyGremlinsCard, TrailBlazerCard,
-    ProjectUnwarmingCard, BizarreBazaarCard, CuriosCabinetCard, LegendOfTheTynnCard,
+        NoRestForTheWeatherManCard, CaindyLandCard, Tables4UCard, GrabbyGremlinsCard, 
+        TrailBlazerCard, ProjectUnwarmingCard, BizarreBazaarCard, CuriosCabinetCard, 
+        LegendOfTheTynnCard, CellBreakCard, HappyHelpersCard, ThymeTimeCard, ProjectSpookems,
+
 }
