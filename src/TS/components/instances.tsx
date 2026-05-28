@@ -18,6 +18,7 @@ import caindyLandImage from '../../assets/title_cards/caindyLand.png'
 import tables4uImage from '../../assets/title_cards/tables4u.png'
 import grabbyGremlinsImage from '../../assets/title_cards/grabbyGremlins.png'
 import trailBlazerImage from '../../assets/title_cards/trailblazer.png'
+import porjectUnwarmingImage from '../../assets/title_cards/projectUnwarming.png'
 
 //Color Constants///////////////////////////////////////////////////////////////////
 const roleColor:string = "MediumSeaGreen"
@@ -161,7 +162,7 @@ function CaindyLandCard() {
     );
 }
 
-function GrabbyGremlins() {
+function GrabbyGremlinsCard() {
     return(
         <ProjectCard title="Grabby Gremlins" description="Protect treasure against hordes of gremlins using your trusty vacuum."
           imgSrc={grabbyGremlinsImage} refSrc= "https://mantisstudios.itch.io/grabby-gremlins"
@@ -176,7 +177,7 @@ function GrabbyGremlins() {
     );
 }
 
-function Tables4U() {
+function Tables4UCard() {
     return(
         <ProjectCard title="Tables4U" description="Web application for restaurants and consumers to manage reservations."
           imgSrc={tables4uImage} refSrc= "https://github.com/Mrneptune11/tables4u"
@@ -189,11 +190,11 @@ function Tables4U() {
             ["Typescript", codeColor],
             ["Javascript", codeColor],
         ])}
-            metaTags={["application"]} />  
+            metaTags={["highlight", "application"]} />  
     );
 }
 
-function TrailBlazer() {
+function TrailBlazerCard() {
     return(
         <ProjectCard title="TrailBlazer" description="Mobile oriented web application for creating and following hiking trails."
           imgSrc={trailBlazerImage} refSrc= "https://github.com/ZenIsBestWolf/cs4241-final"
@@ -207,10 +208,27 @@ function TrailBlazer() {
             ["Typescript", codeColor],
             ["SCSS", codeColor],
         ])} 
+            metaTags={["highlight", "application"]} />  
+    );
+}
+
+function ProjectUnwarmingCard() {
+    return(
+        <ProjectCard title="Project Unwarming" description="An AI powered global warming educational simulation game."
+          imgSrc={porjectUnwarmingImage} refSrc= "https://github.com/ClimateChangers-pos/ProjectUnwarming/commits/dev/"
+          tagDict = {new Map<string,string>(
+            [["Programmer", roleColor],
+            ["Pygame", softwareColor],
+            ["Github", softwareColor],
+            ["Jira", softwareColor],
+            ["Python", codeColor],
+        ])} 
             metaTags={["application"]} />  
     );
 }
 ///////////////////////////////////////////////////////////////////////////////////////////
 
 export {NetworkJamCard, MyndspellCard, ATWWDCard, DigiDivaCard, JamCorpCard, ShinobiDuelCard, 
-    NoRestForTheWeatherManCard, CaindyLandCard, Tables4U, GrabbyGremlins, TrailBlazer}
+    NoRestForTheWeatherManCard, CaindyLandCard, Tables4UCard, GrabbyGremlinsCard, TrailBlazerCard,
+    ProjectUnwarmingCard,
+}
