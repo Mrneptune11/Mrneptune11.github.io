@@ -11,7 +11,7 @@ function App() {
 
 
     return (
-        <BrowserRouter basename="Mrneptune11.github.io">
+        <BrowserRouter>
             <ScrollToTop />
             <NavBar />
             <div className = "routing">
