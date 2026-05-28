@@ -18,7 +18,8 @@ import caindyLandImage from '../../assets/title_cards/caindyLand.png'
 import tables4uImage from '../../assets/title_cards/tables4u.png'
 import grabbyGremlinsImage from '../../assets/title_cards/grabbyGremlins.png'
 import trailBlazerImage from '../../assets/title_cards/trailblazer.png'
-import porjectUnwarmingImage from '../../assets/title_cards/projectUnwarming.png'
+import projectUnwarmingImage from '../../assets/title_cards/projectUnwarming.png'
+import bizarreBazaarImage from '../../assets/title_cards/bizarreBizarre.png'
 
 //Color Constants///////////////////////////////////////////////////////////////////
 const roleColor:string = "MediumSeaGreen"
@@ -105,6 +106,7 @@ function JamCorpCard() {
             ["Unreal Engine", softwareColor],
             ["Wwise", softwareColor],
             ["Github", softwareColor],
+            ["Jira", softwareColor],
             ["C++", codeColor],
             ["Blueprints", codeColor],
         ])}
@@ -215,7 +217,7 @@ function TrailBlazerCard() {
 function ProjectUnwarmingCard() {
     return(
         <ProjectCard title="Project Unwarming" description="An AI powered global warming educational simulation game."
-          imgSrc={porjectUnwarmingImage} refSrc= "https://github.com/ClimateChangers-pos/ProjectUnwarming/commits/dev/"
+          imgSrc={projectUnwarmingImage} refSrc= "https://github.com/ClimateChangers-pos/ProjectUnwarming/"
           tagDict = {new Map<string,string>(
             [["Programmer", roleColor],
             ["Pygame", softwareColor],
@@ -226,9 +228,21 @@ function ProjectUnwarmingCard() {
             metaTags={["application"]} />  
     );
 }
+
+function BizarreBazaarCard() {
+    return(
+        <ProjectCard title="Bizarre Bazaar" description="Lie, lowball, and scalp in this haggling improv card game."
+          imgSrc={bizarreBazaarImage} refSrc= "https://mr-neptune.itch.io/bizarre-bazaar"
+          tagDict = {new Map<string,string>(
+            [["Designer", roleColor],
+            ["Writer", roleColor],
+        ])} 
+            metaTags={["application"]} />  
+    );
+}
 ///////////////////////////////////////////////////////////////////////////////////////////
 
 export {NetworkJamCard, MyndspellCard, ATWWDCard, DigiDivaCard, JamCorpCard, ShinobiDuelCard, 
     NoRestForTheWeatherManCard, CaindyLandCard, Tables4UCard, GrabbyGremlinsCard, TrailBlazerCard,
-    ProjectUnwarmingCard,
+    ProjectUnwarmingCard, BizarreBazaarCard
 }
