@@ -19,11 +19,14 @@ import tables4uImage from '../../assets/title_cards/tables4u.png'
 import grabbyGremlinsImage from '../../assets/title_cards/grabbyGremlins.png'
 import trailBlazerImage from '../../assets/title_cards/trailblazer.png'
 
-
-//PROJECT CARD INSTANCES///////////////////////////////////////////////////////////////////
+//Color Constants///////////////////////////////////////////////////////////////////
 const roleColor:string = "MediumSeaGreen"
 const softwareColor:string = "LightSeaGreen"
 const codeColor:string = "Plum"
+////////////////////////////////////////////////////////////////////////////////////
+
+
+//PROJECT CARD INSTANCES///////////////////////////////////////////////////////////////////
 
 function NetworkJamCard() {
     return(
@@ -36,7 +39,8 @@ function NetworkJamCard() {
             ["Pico-8", softwareColor],
             ["Github", softwareColor],
             ["Lua", codeColor],
-        ])} />
+        ])}
+            metaTags={["digital"]} />
     );
 }
 
@@ -53,7 +57,8 @@ function MyndspellCard() {
             ["Github", softwareColor],
             ["Jira", softwareColor],
             ["GDScript", codeColor],
-        ])} />
+        ])}
+            metaTags={["highlight","digital"]} />
     );
 }
 
@@ -68,7 +73,8 @@ function ATWWDCard() {
             ["Github", softwareColor],
             ["GDScript", codeColor],
             ["C#", codeColor],
-        ])} />
+        ])} 
+            metaTags={["digital"]} />  
     );
 }
 
@@ -83,7 +89,8 @@ function DigiDivaCard() {
             ["Github", softwareColor],
             ["C++", codeColor],
             ["Blueprints", codeColor],
-        ])} />
+        ])} 
+            metaTags={["highlight","digital"]} />  
     );
 }
 
@@ -99,7 +106,8 @@ function JamCorpCard() {
             ["Github", softwareColor],
             ["C++", codeColor],
             ["Blueprints", codeColor],
-        ])} />
+        ])}
+            metaTags={["highlight","digital"]} />  
     );
 }
 
@@ -115,7 +123,8 @@ function ShinobiDuelCard() {
             ["Github", softwareColor],
             ["C++", codeColor],
             ["SFML", codeColor],
-        ])} />
+        ])} 
+            metaTags={["digital"]} />  
     );
 }
 
@@ -129,7 +138,8 @@ function NoRestForTheWeatherManCard() {
             ["Godot", softwareColor],
             ["Github", softwareColor],
             ["GDScript", codeColor],
-        ])} />
+        ])} 
+            metaTags={["digital"]} />  
     );
 }
 
@@ -146,7 +156,8 @@ function CaindyLandCard() {
             ["JavaScript", codeColor],
             ["CSS", codeColor],
             ["WebGL", codeColor],
-        ])} />
+        ])}
+            metaTags={["application", "tabletop"]} />  
     );
 }
 
@@ -160,7 +171,8 @@ function GrabbyGremlins() {
             ["Unity", softwareColor],
             ["Github", softwareColor],
             ["C#", codeColor],
-        ])} />
+        ])} 
+            metaTags={["digital"]} />  
     );
 }
 
@@ -176,7 +188,8 @@ function Tables4U() {
             ["Tailwind CSS", softwareColor],
             ["Typescript", codeColor],
             ["Javascript", codeColor],
-        ])} />
+        ])}
+            metaTags={["application"]} />  
     );
 }
 
@@ -193,7 +206,8 @@ function TrailBlazer() {
             ["Auth0", softwareColor],
             ["Typescript", codeColor],
             ["SCSS", codeColor],
-        ])} />
+        ])} 
+            metaTags={["application"]} />  
     );
 }
 ///////////////////////////////////////////////////////////////////////////////////////////

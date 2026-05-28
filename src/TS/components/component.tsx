@@ -26,6 +26,7 @@ type ProjectProps = {
   imgSrc?:string,
   refSrc:string,
   tagDict:Map<string,string>
+  metaTags?:Array<MetaTag>
 }
 
 //props for tags under project cards
@@ -34,10 +35,17 @@ type TagProps = {
     bgColor:string, 
 }
 
+//MetaTag union type validate tag data
+type MetaTag =
+  | "highlight"
+  | "digital"
+  | "tabletop"
+  | "application"
+
 //component function
 function ProjectCard(projectProps: ProjectProps) {
     return (
-        <CardLink className="project-card-wrapper" href={projectProps.refSrc}>
+        <CardLink className="project-card-wrapper" href={projectProps.refSrc} data-meta={projectProps.metaTags}>
             <Card className="project-card">
                 <Card.Title>{projectProps.title}</Card.Title>
                 <Card.Body className="card-description">{projectProps.description}</Card.Body>
