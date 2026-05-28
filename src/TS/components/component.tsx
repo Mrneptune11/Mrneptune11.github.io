@@ -155,6 +155,26 @@ function SocialBar() {
 }
 ///////////////////////////////////////////////////////////////////////////////////////////
 
+//SUB BAR COMPONENT////////////////////////////////////////////////////////////////////////
+
+//
+type SubBarProps = {
+    items:Array<string>,
+}
+
+//sub bars hold multiple buttons that change behaviour on a given page
+function SubBar(subBarProps:SubBarProps) {
+    return (
+        <nav>
+         {subBarProps.items.map((item, index) =>
+            <Link to ="" key = {index}>{item}</Link>)}
+        </nav>
+    );
+
+}
+///////////////////////////////////////////////////////////////////////////////////////////
+
+
 //SCROLL COMPONENT/////////////////////////////////////////////////////////////////////////
 //used to scroll to the top of page when rerouting
 function ScrollToTop() {
@@ -166,4 +186,4 @@ function ScrollToTop() {
 }
 ///////////////////////////////////////////////////////////////////////////////////////////
 
-export { ProjectCard, NavBar, ScrollToTop, TextBlurb, SocialBar,ProjectTag};
+export { ProjectCard, NavBar, ScrollToTop, TextBlurb, SocialBar,ProjectTag, SubBar};

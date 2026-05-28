@@ -1,7 +1,8 @@
 //portfolio projects page
 
 //react imports
-import { Container } from 'react-bootstrap'
+import { Container} from 'react-bootstrap'
+import { useState } from 'react'
 
 //card importants
 import { NetworkJamCard, MyndspellCard, ATWWDCard, DigiDivaCard, JamCorpCard, 
@@ -11,11 +12,15 @@ import { NetworkJamCard, MyndspellCard, ATWWDCard, DigiDivaCard, JamCorpCard,
         ThymeTimeCard, ProjectSpookems,
     } from '../components/instances.tsx'
 
+//component imports
+import { SubBar } from '../components/component.tsx'
+
 function Projects() {
 
     return (
         <div className="page">
             <h1 className="page-title">Projects</h1>
+            <SubBar items={["Highlighted Projects", "All Projects", "Digital Games", "Tabletop Games", "Applications", "Other Projects"]}></SubBar>
                 <Container className = "project-container">
                     <NetworkJamCard/>
                     <MyndspellCard/>
