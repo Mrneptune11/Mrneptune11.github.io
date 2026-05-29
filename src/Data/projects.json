@@ -2,7 +2,303 @@
     {
         "title" : "Myndspell:The Wizard Maze",
         "description" : "Meet quirky characters and face foes in this world of your own fantasy.",
-        "imgSrc" : ""
+        "imgSrc" : "/assets/title_cards/myndspell.png",
+        "refSrc" : "https://jraxen.itch.io/myndspell",
+        "tagDict" : [
+            ["Programmer", "MediumSeaGreen"],
+            ["Producer", "MediumSeaGreen"],
+            ["Designer", "MediumSeaGreen"],
+            ["Godot", "LightSeaGreen"],
+            ["Wwise", "LightSeaGreen"],
+            ["Github", "LightSeaGreen"],
+            ["Jira", "LightSeaGreen"],
+            ["GDScript", "Plum"]
+        ],
+        "metaTags" : ["highlight", "featured", "digital"]
+    },
 
+    {
+        "title" : "Network Jam!",
+        "description" : "Deliver network packets through cyberspace and dodge corrupted data." ,
+        "imgSrc" : "/assets/title_cards/network_jam.png",
+        "refSrc" : "https://tapeknot.itch.io/network-jam",
+        "tagDict" : [
+            ["Programmer", "MediumSeaGreen"],
+            ["Artist", "MediumSeaGreen"],
+            ["Designer", "MediumSeaGreen"],
+            ["Pico-8", "LightSeaGreen"],
+            ["Github", "LightSeaGreen"],
+            ["Lua", "Plum"]
+        ],
+        "metaTags" : ["digital"]
+    },
+
+    {
+        "title" : "And The World Went Dark",
+        "description" : "Combat the forces of the darkness as you traverse a dying world." ,
+        "imgSrc" : "/assets/title_cards/atwwd.png",
+        "refSrc" : "https://docterbuster.itch.io/and-the-world-went-dark",
+        "tagDict" : [
+            ["Programmer", "MediumSeaGreen"],
+            ["Godot Mono", "LightSeaGreen"],
+            ["Yarn Spinner", "LightSeaGreen"],
+            ["Github", "LightSeaGreen"],
+            ["GDScript", "Plum"],
+            ["C#", "Plum"]
+        ],
+        "metaTags" : ["digital"]
+    },
+
+    {
+        "title" : "DigiDiva",
+        "description" : "As a chronically online influencer grow your fanbase and defend your image." ,
+        "imgSrc" : "/assets/title_cards/DigiDiva.png",
+        "refSrc" : "https://allisonvtnguyen.itch.io/digidiva",
+        "tagDict" : [
+            ["Programmer", "MediumSeaGreen"],
+            ["Audio", "MediumSeaGreen"],
+            ["Unreal Engine", "LightSeaGreen"],
+            ["Github", "LightSeaGreen"],
+            ["C++", "Plum"],
+            ["Blueprints", "Plum"]
+        ],
+        "metaTags" : ["highlight", "digital"]
+    },
+    
+    {
+        "title" : "JamCorp3D",
+        "description" : "Platform to the beat to take back your stolen jams from evil entrepeneur cats." ,
+        "imgSrc" : "/assets/title_cards/jamcorp3d.png",
+        "refSrc" : "https://mustardrift.itch.io/jamcorp3d",
+        "tagDict" : [
+            ["Programmer", "MediumSeaGreen"],
+            ["Designer", "MediumSeaGreen"],
+            ["Unreal Engine", "LightSeaGreen"],
+            ["Wwise", "LightSeaGreen"],
+            ["Github", "LightSeaGreen"],
+            ["Jira", "LightSeaGreen"],
+            ["C++", "Plum"],
+            ["Blueprints", "Plum"]
+        ],
+        "metaTags" : ["highlight", "digital"]
+    },
+
+    {
+        "title" : "Shinobi Duel",
+        "description" : "Fight as a ninja and battle opponents to the death in procedural arenas." ,
+        "imgSrc" : "/assets/title_cards/shinobiDuel.png",
+        "refSrc" : "https://mr-neptune.itch.io/shinobi-duel",
+        "tagDict" : [
+            ["Programmer", "MediumSeaGreen"],
+            ["Artist", "MediumSeaGreen"],
+            ["Designer", "MediumSeaGreen"],
+            ["Custom Engine", "LightSeaGreen"],
+            ["Github", "LightSeaGreen"],
+            ["C++", "Plum"],
+            ["SFML", "Plum"]
+        ],
+        "metaTags" : ["digital"]
+    },
+
+    {
+        "title" : "No Rest for the Weatherman",
+        "description" : "Sick and on the job, help guide the weather where it needs to be." ,
+        "imgSrc" : "/assets/title_cards/norestforweatherman.png",
+        "refSrc" : "https://gabe-taylor.itch.io/no-rest-for-the-weatherman",
+        "tagDict" : [
+            ["Programmer", "MediumSeaGreen"],
+            ["Designer", "MediumSeaGreen"],
+            ["Godot", "LightSeaGreen"],
+            ["Github", "LightSeaGreen"],
+            ["GDScript", "Plum"]
+        ],
+        "metaTags" : ["digital"]
+    },
+
+    {
+        "title" : "C(AI)ndy.Land",
+        "description" : "Procedurally generate 'print and play' game boards with custom rulesets." ,
+        "imgSrc" : "/assets/title_cards/caindyLand.png",
+        "refSrc" : "https://marvelous-croquembouche-1082a4.netlify.app/",
+        "tagDict" : [
+            ["Programmer", "MediumSeaGreen"],
+            ["Designer", "MediumSeaGreen"],
+            ["Svelte", "LightSeaGreen"],
+            ["Github", "LightSeaGreen"],
+            ["HTML", "Plum"],
+            ["JavaScript", "Plum"],
+            ["CSS", "Plum"],
+            ["WebGL", "Plum"]
+        ],
+        "metaTags" : ["application", "tabletop"]
+    },
+
+    {
+        "title" : "Grabby Gremlins",
+        "description" : "Protect treasure against hordes of gremlins using your trusty vacuum." ,
+        "imgSrc" : "/assets/title_cards/grabbyGremlins.png",
+        "refSrc" : "https://mantisstudios.itch.io/grabby-gremlins",
+        "tagDict" : [
+            ["Programmer", "MediumSeaGreen"],
+            ["Designer", "MediumSeaGreen"],
+            ["Unity", "LightSeaGreen"],
+            ["Github", "LightSeaGreen"],
+            ["C#", "Plum"]
+        ],
+        "metaTags" : ["digital"]
+    },
+
+    {
+        "title" : "Cell Break",
+        "description" : "As a virus break free of cell jail and cause the highest fever ever." ,
+        "imgSrc" : "/assets/title_cards/cellBreak.png",
+        "refSrc" : "https://mr-neptune.itch.io/cell-break",
+        "tagDict" : [
+            ["Programmer", "MediumSeaGreen"],
+            ["Artist", "MediumSeaGreen"],
+            ["Designer", "MediumSeaGreen"],
+            ["Godot", "LightSeaGreen"],
+            ["Github", "LightSeaGreen"],
+            ["GDScript", "Plum"]
+        ],
+        "metaTags" : ["digital"]
+    },
+
+    {
+        "title" : "Happy Helpers™",
+        "description" : "Lost in a mysterious plane outside of reality, try to find you way back home." ,
+        "imgSrc" : "/assets/title_cards/happyHelpers.png",
+        "refSrc" : "https://mr-neptune.itch.io/happy-helpers",
+        "tagDict" : [
+            ["Programmer", "MediumSeaGreen"],
+            ["Artist", "MediumSeaGreen"],
+            ["Writer", "MediumSeaGreen"],
+            ["Designer", "MediumSeaGreen"],
+            ["Godot", "LightSeaGreen"],
+            ["Github", "LightSeaGreen"],
+            ["GDScript", "Plum"]
+        ],
+        "metaTags" : ["digital"]
+    },    
+
+    {
+        "title" : "Thyme Time",
+        "description" : "Quickly harvest veggies to make the most delicious meal." ,
+        "imgSrc" : "/assets/title_cards/thymeTime.png",
+        "refSrc" : "https://cjpugs.itch.io/thyme-time",
+        "tagDict" : [
+            ["Programmer", "MediumSeaGreen"],
+            ["Artist", "MediumSeaGreen"],
+            ["Designer", "MediumSeaGreen"],
+            ["Unity", "LightSeaGreen"],
+            ["Github", "LightSeaGreen"],
+            ["C#", "Plum"]
+        ],
+        "metaTags" : ["digital"]
+    },    
+
+    {
+        "title" : "Project Spookems",
+        "description" : "While trick or treating, find a creepy mansion that surely hides candy inside." ,
+        "imgSrc" : "/assets/title_cards/projectSpookems.png",
+        "refSrc" : "https://pkmnhx43.itch.io/project-spookems",
+        "tagDict" : [
+            ["Programmer", "MediumSeaGreen"],
+            ["Artist", "MediumSeaGreen"],
+            ["Designer", "MediumSeaGreen"],
+            ["Godot Mono", "LightSeaGreen"],
+            ["Github", "LightSeaGreen"],
+            ["C#", "Plum"]
+        ],
+        "metaTags" : ["digital"]
+    },    
+
+    {
+        "title" : "Tables4U",
+        "description" : "Web application for restaurants and consumers to manage reservations." ,
+        "imgSrc" : "/assets/title_cards/tables4u.png",
+        "refSrc" : "https://github.com/Mrneptune11/tables4u",
+        "tagDict" : [
+            ["Programmer", "MediumSeaGreen"],
+            ["React", "LightSeaGreen"],
+            ["MySQL", "LightSeaGreen"],
+            ["AWS", "LightSeaGreen"],
+            ["Tailwind CSS", "LightSeaGreen"],
+            ["Typescript", "Plum"],
+            ["Javascript", "Plum"]
+        ],
+        "metaTags" : ["highlight","application"]
+    },   
+
+    {
+        "title" : "TrailBlazer",
+        "description" : "Mobile oriented web application for creating and following hiking trails.",
+        "imgSrc" : "/assets/title_cards/trailblazer.png",
+        "refSrc" : "https://github.com/ZenIsBestWolf/cs4241-final",
+        "tagDict" : [
+            ["Programmer", "MediumSeaGreen"],
+            ["React", "LightSeaGreen"],
+            ["MongoDB", "LightSeaGreen"],
+            ["AWS", "LightSeaGreen"],
+            ["Bootstrap", "LightSeaGreen"],
+            ["Auth0", "LightSeaGreen"],
+            ["Typescript", "Plum"],
+            ["SCSS", "Plum"]
+        ],
+        "metaTags" : ["highlight","application"]
+    },
+
+    {
+        "title" : "Project Unwarming",
+        "description" : "An AI powered global warming educational simulation game.",
+        "imgSrc" : "/assets/title_cards/projectUnwarming.png",
+        "refSrc" : "https://github.com/ClimateChangers-pos/ProjectUnwarming/",
+        "tagDict" : [
+            ["Programmer", "MediumSeaGreen"],
+            ["Pygame", "LightSeaGreen"],
+            ["Github", "LightSeaGreen"],
+            ["Jira", "LightSeaGreen"],
+            ["Python", "Plum"]
+        ],
+        "metaTags" : ["application"]
+    },
+
+    {
+        "title" : "Bizarre Bazaar",
+        "description" : "Lie, lowball, and scalp in this haggling improv card game.",
+        "imgSrc" : "/assets/title_cards/bizarreBizarre.png",
+        "refSrc" : "https://mr-neptune.itch.io/bizarre-bazaar",
+        "tagDict" : [
+            ["Designer", "MediumSeaGreen"],
+            ["Writer", "MediumSeaGreen"]
+        ],
+        "metaTags" : ["tabletop"]
+    },
+
+    {
+        "title" : "Curio's Cabinet",
+        "description" : "Proptotype for a narrative and puzzle driven 'escape room' in a cabinet.",
+        "imgSrc" : "/assets/title_cards/curiosCabinet.png",
+        "refSrc" : "",
+        "tagDict" : [
+            ["Designer", "MediumSeaGreen"],
+            ["Artist", "MediumSeaGreen"]
+        ],
+        "metaTags" : ["tabletop", "other"]
+    },    
+
+    {
+        "title" : "The Legend of the Tynn",
+        "description" : "A 2024 ARG about a cryptid stealing items from a university.",
+        "imgSrc" : "/assets/title_cards/legendOfTheTynn.png",
+        "refSrc" : "",
+        "tagDict" : [
+            ["Programmer", "MediumSeaGreen"],
+            ["Designer", "MediumSeaGreen"],
+            ["Artist", "MediumSeaGreen"]
+        ],
+        "metaTags" : ["other"]
     }
+
+
 ]

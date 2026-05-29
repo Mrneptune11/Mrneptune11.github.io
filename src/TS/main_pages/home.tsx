@@ -9,9 +9,6 @@ import { TextBlurb } from '../components/component.tsx'
 //asset imports
 import { Container } from 'react-bootstrap'
 
-//card importants
-import { NetworkJamCard, MyndspellCard, ATWWDCard } from '../components/instances.tsx'
-
 
 //home page contents
 function Home() {
@@ -25,9 +22,7 @@ function Home() {
       </Container>
       
       <Container className = "project-container">
-        <NetworkJamCard/>
-        <MyndspellCard/>
-        <ATWWDCard/>
+
       </Container>
     </div>
   )

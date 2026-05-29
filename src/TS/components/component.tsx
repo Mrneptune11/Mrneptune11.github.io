@@ -28,7 +28,7 @@ type ProjectProps = {
   description:string,
   imgSrc?:string,
   refSrc:string,
-  tagDict:Map<string,string>
+  tagDict:Array<Array<string>>
   metaTags?:Array<MetaTag>
 }
 
@@ -41,6 +41,7 @@ type TagProps = {
 //MetaTag union type validate tag data
 type MetaTag =
   | "highlight"
+  | "featured"
   | "digital"
   | "tabletop"
   | "application"
@@ -56,7 +57,7 @@ function ProjectCard(projectProps: ProjectProps) {
                 <Card.Img src={projectProps.imgSrc || "holder.js/100px180"} />
 
              <Container className = 'tag-container'>
-                                {Array.from(projectProps.tagDict.entries()).map(([text, color], index) => (
+                                {projectProps.tagDict.map(([text, color], index) => (
                     <ProjectTag key = {index} bgColor={color} text = {text}>
                     </ProjectTag>
                 ))}
@@ -187,3 +188,5 @@ function ScrollToTop() {
 ///////////////////////////////////////////////////////////////////////////////////////////
 
 export { ProjectCard, NavBar, ScrollToTop, TextBlurb, SocialBar,ProjectTag, SubBar};
+
+export type {ProjectProps};

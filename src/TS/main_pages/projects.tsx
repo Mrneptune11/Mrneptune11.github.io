@@ -1,45 +1,27 @@
 //portfolio projects page
 
 //react imports
-import { Container} from 'react-bootstrap'
-
-//card importants
-import { NetworkJamCard, MyndspellCard, ATWWDCard, DigiDivaCard, JamCorpCard, 
-        CaindyLandCard, ShinobiDuelCard, NoRestForTheWeatherManCard, Tables4UCard,
-        GrabbyGremlinsCard, TrailBlazerCard, ProjectUnwarmingCard, BizarreBazaarCard,
-        CuriosCabinetCard, LegendOfTheTynnCard, CellBreakCard, HappyHelpersCard,
-        ThymeTimeCard, ProjectSpookems,
-    } from '../components/instances.tsx'
+import { Container } from 'react-bootstrap'
 
 //component imports
-import { SubBar } from '../components/component.tsx'
+import { SubBar, ProjectCard } from '../components/component.tsx'
+import type {ProjectProps} from '../components/component.tsx'
+
+//data imports
+import projectData from '../../Data/projects.json'
 
 function Projects() {
+    
+    const projects = projectData as ProjectProps[]
 
     return (
         <div className="page">
             <h1 className="page-title">Projects</h1>
             <SubBar items={["Highlighted Projects", "All Projects", "Digital Games", "Tabletop Games", "Applications", "Other Projects"]}></SubBar>
                 <Container className = "project-container">
-                    <NetworkJamCard/>
-                    <MyndspellCard/>
-                    <ATWWDCard/>
-                    <DigiDivaCard/>
-                    <JamCorpCard/>
-                    <ShinobiDuelCard/>
-                    <NoRestForTheWeatherManCard/>
-                    <CaindyLandCard/>
-                    <Tables4UCard/>
-                    <GrabbyGremlinsCard/>
-                    <TrailBlazerCard/>
-                    <ProjectUnwarmingCard/>
-                    <BizarreBazaarCard/>
-                    <CuriosCabinetCard/>
-                    <LegendOfTheTynnCard/>
-                    <CellBreakCard/>
-                    <HappyHelpersCard/>
-                    <ThymeTimeCard/>
-                    <ProjectSpookems/>
+                    {projects.map((project) => (
+                        <ProjectCard key={project.title} {...project}/>
+                    ))}
                 </Container>
         </div>
     )
