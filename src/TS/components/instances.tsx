@@ -7,25 +7,25 @@ import '../../CSS/app.css'
 import { ProjectCard } from '../components/component.tsx'
 
 //asset imports
-import networkJamImage from '../../assets/title_cards/network_jam.png'
-import myndspellImage from '../../assets/title_cards/myndspell.png'
-import atwwdImage from '../../assets/title_cards/atwwd.png'
-import digiDivaImage from '../../assets/title_cards/DigiDiva.png'
-import jamcorp3dImage from '../../assets/title_cards/jamcorp3d.png'
-import shinobiDuelImage from '../../assets/title_cards/shinobiDuel.png'
-import noRestForTheWeatherManImage from "../../assets/title_cards/norestforweatherman.png"
-import caindyLandImage from '../../assets/title_cards/caindyLand.png'
-import tables4uImage from '../../assets/title_cards/tables4u.png'
-import grabbyGremlinsImage from '../../assets/title_cards/grabbyGremlins.png'
-import trailBlazerImage from '../../assets/title_cards/trailblazer.png'
-import projectUnwarmingImage from '../../assets/title_cards/projectUnwarming.png'
-import bizarreBazaarImage from '../../assets/title_cards/bizarreBizarre.png'
-import curioCabinetImage from '../../assets/title_cards/curiosCabinet.png'
-import legendOfTheTynnImage from "../../assets/title_cards/legendOfTheTynn.png"
-import cellBreakImage from "../../assets/title_cards/cellBreak.png"
-import happyHelpersImage from "../../assets/title_cards/happyHelpers.png"
-import thymeTimeImage from '../../assets/title_cards/thymeTime.png'
-import projectSpookemsImage from '../../assets/title_cards/projectSpookems.png'
+import networkJamImage from '/assets/title_cards/network_jam.png'
+import myndspellImage from '/assets/title_cards/myndspell.png'
+import atwwdImage from '/assets/title_cards/atwwd.png'
+import digiDivaImage from '/assets/title_cards/DigiDiva.png'
+import jamcorp3dImage from '/assets/title_cards/jamcorp3d.png'
+import shinobiDuelImage from '/assets/title_cards/shinobiDuel.png'
+import noRestForTheWeatherManImage from "/assets/title_cards/norestforweatherman.png"
+import caindyLandImage from '/assets/title_cards/caindyLand.png'
+import tables4uImage from '/assets/title_cards/tables4u.png'
+import grabbyGremlinsImage from '/assets/title_cards/grabbyGremlins.png'
+import trailBlazerImage from '/assets/title_cards/trailblazer.png'
+import projectUnwarmingImage from '/assets/title_cards/projectUnwarming.png'
+import bizarreBazaarImage from '/assets/title_cards/bizarreBizarre.png'
+import curioCabinetImage from '/assets/title_cards/curiosCabinet.png'
+import legendOfTheTynnImage from "/assets/title_cards/legendOfTheTynn.png"
+import cellBreakImage from "/assets/title_cards/cellBreak.png"
+import happyHelpersImage from "/assets/title_cards/happyHelpers.png"
+import thymeTimeImage from '/assets/title_cards/thymeTime.png'
+import projectSpookemsImage from '/assets/title_cards/projectSpookems.png'
 
 //Color Constants///////////////////////////////////////////////////////////////////
 const roleColor:string = "MediumSeaGreen"

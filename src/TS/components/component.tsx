@@ -13,7 +13,7 @@ import { useEffect } from "react"
 
 //Asset imports
 import { EmailIcon, LinkedInIcon, ItchIcon, HomeIcon, AboutIcon, ProjectIcon, ResumeIcon } from "./svg_embeds.tsx"
-import header from "../../assets/pixel/Header.png"
+import header from "/assets/pixel/Header.png"
 
 //Util imports
 import {Parser} from '../utility/parser.tsx'

@@ -2,7 +2,6 @@
 
 //react imports
 import { Container} from 'react-bootstrap'
-import { useState } from 'react'
 
 //card importants
 import { NetworkJamCard, MyndspellCard, ATWWDCard, DigiDivaCard, JamCorpCard, 

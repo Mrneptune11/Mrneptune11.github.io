@@ -4,7 +4,7 @@
 import '../../CSS/app.css';
 
 //asset imports
-import resumePDF from '../../assets/pdf/resume.pdf';
+import resumePDF from '/assets/pdf/resume.pdf';
 
 function Resume() {
 
