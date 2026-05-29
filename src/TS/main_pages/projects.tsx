@@ -7,6 +7,7 @@ import {useState} from 'react'
 //component imports
 import { SubBar, ProjectCard } from '../components/component.tsx'
 import {type ProjectProps, type SubBarItem, type MetaTag} from '../components/component.tsx'
+import { filterRenderTargets } from '../utility/project_filter.tsx'
 
 //data imports
 import projectData from '../../Data/projects.json'
@@ -39,27 +40,5 @@ function Projects() {
         </div>
     )
 }
-
-function filterRenderTargets(potentialTargets:Array<ProjectProps>, filter:MetaTag):Array<ProjectProps> {
-    const renderTargets:Array<ProjectProps> = []
-
-    //return all targets if all filter
-    if (filter === "all") {
-            return potentialTargets;
-    }
-
-    //perform filter
-    for (let i:number = 0; i < potentialTargets.length; i++) {
-        const project:ProjectProps = potentialTargets[i]
-        
-        if (project.metaTags && project.metaTags.includes(filter)) {
-            renderTargets.push(project);
-        }
-    }
-
-    return renderTargets;
-    
-}
-
 
 export default Projects

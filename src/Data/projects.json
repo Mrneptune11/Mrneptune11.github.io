@@ -48,7 +48,7 @@
             ["C++", "Plum"],
             ["Blueprints", "Plum"]
         ],
-        "metaTags" : ["highlight", "digital"]
+        "metaTags" : ["highlight", "digital", "featured"]
     },
 
     {
@@ -64,7 +64,7 @@
             ["C++", "Plum"],
             ["Blueprints", "Plum"]
         ],
-        "metaTags" : ["highlight", "digital"]
+        "metaTags" : ["highlight", "digital", "featured"]
     },
 
     {
