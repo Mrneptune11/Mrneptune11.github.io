@@ -107,33 +107,45 @@ const dict:Map<string,string> = Parser.colorHighlighter(textBlurbProps.content)
 ///////////////////////////////////////////////////////////////////////////////////////////
 
 //NAV BAR COMPONENT////////////////////////////////////////////////////////////////////////
-
 //persistent navigation bar at the top of the page
 function NavBar() {
+
+    const curPage = useLocation();
+
     return (
         <div>
             <nav className="navbar">
                     <img className = "myheader" src = {header}/> 
-                    <Link to="/">
-                        <HomeIcon/>
+                    <Link to="/" style={evaluateStyle(curPage.pathname,"/")}>
+                        <HomeIcon colorFill={curPage.pathname === "/" ? "var(--highlight_color)" : "var(--primary_color)"}/>
                         Home
                     </Link>
-                    <Link to="/projects">
-                        <ProjectIcon/>
+                    <Link to="/projects" style={evaluateStyle(curPage.pathname,"/projects")}>
+                        <ProjectIcon colorFill={curPage.pathname === "/projects" ? "var(--highlight_color)" : "var(--primary_color)"}/>
                         Projects
                     </Link>
-                    <Link to="/about">
-                        <AboutIcon/>
+                    <Link to="/about" style={evaluateStyle(curPage.pathname,"/about")}>
+                        <AboutIcon colorFill={curPage.pathname === "/about" ? "var(--highlight_color)" : "var(--primary_color)"}/>
                         About  
                     </Link>
-                    <Link to="/resume">
-                        <ResumeIcon/>
+                    <Link to="/resume" style={evaluateStyle(curPage.pathname,"/resume")}>
+                        <ResumeIcon colorFill={curPage.pathname === "/resume" ? "var(--highlight_color)" : "var(--primary_color)"}/>
                         Resume
                     </Link>
             </nav>
         </div>
     )
 }
+
+function evaluateStyle(curPage:string, key:string):React.CSSProperties {
+
+    return {textDecoration : curPage === key ? "underline" : "none",
+            scale : curPage === key ? 1.1 : 1,
+            color : curPage === key ? "var(--highlight_color)" : "var(--primary_color)"
+    }
+}
+
+
 ///////////////////////////////////////////////////////////////////////////////////////////
 
 
@@ -144,13 +156,13 @@ function SocialBar() {
     return (
         <div className="socialbar">
                 <a href="https://www.linkedin.com/in/sebastian-lanz-53167b256" >
-                    <ItchIcon/>
+                    <ItchIcon colorFill=""/>
                 </a>
                 <a href="https://mr-neptune.itch.io/" >
-                    <LinkedInIcon/>
+                    <LinkedInIcon colorFill=""/>
                 </a>
                 <a href="mailto:sebastianlanz301@gmail.com" >
-                    <EmailIcon/>
+                    <EmailIcon colorFill=""/>
                 </a>
         </div>
     )
