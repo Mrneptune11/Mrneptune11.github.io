@@ -248,25 +248,8 @@
             ["Artist", "MediumSeaGreen"]
         ],
         "metaTags" : ["other"]
-    }, 
-
-    {
-        "title" : "Tables4U",
-        "description" : "Web application for restaurants and consumers to manage reservations." ,
-        "imgSrc" : "/assets/title_cards/tables4u.png",
-        "refSrc" : "https://github.com/Mrneptune11/tables4u",
-        "tagDict" : [
-            ["Programmer", "MediumSeaGreen"],
-            ["React", "LightSeaGreen"],
-            ["MySQL", "LightSeaGreen"],
-            ["AWS", "LightSeaGreen"],
-            ["Tailwind CSS", "LightSeaGreen"],
-            ["Typescript", "Plum"],
-            ["Javascript", "Plum"]
-        ],
-        "metaTags" : ["highlight","application"]
-    },   
-
+    },     
+    
     {
         "title" : "TrailBlazer",
         "description" : "Mobile oriented web application for creating and following hiking trails.",
@@ -284,6 +267,23 @@
         ],
         "metaTags" : ["highlight","application"]
     },
+
+    {
+        "title" : "Tables4U",
+        "description" : "Web application for restaurants and consumers to manage reservations." ,
+        "imgSrc" : "/assets/title_cards/tables4u.png",
+        "refSrc" : "https://github.com/Mrneptune11/tables4u",
+        "tagDict" : [
+            ["Programmer", "MediumSeaGreen"],
+            ["React", "LightSeaGreen"],
+            ["MySQL", "LightSeaGreen"],
+            ["AWS", "LightSeaGreen"],
+            ["Tailwind CSS", "LightSeaGreen"],
+            ["Typescript", "Plum"],
+            ["Javascript", "Plum"]
+        ],
+        "metaTags" : ["highlight","application"]
+    },   
 
     {
         "title" : "Project Unwarming",
