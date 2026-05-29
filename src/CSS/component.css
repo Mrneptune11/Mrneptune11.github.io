@@ -25,6 +25,7 @@
     border-radius: 10px;
     max-width: 300px;
     color: var(--primary_color);
+    min-height: 315px;
 }
 
 .project-card .card-img {
