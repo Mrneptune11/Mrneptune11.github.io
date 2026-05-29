@@ -32,38 +32,6 @@
         ],
         "metaTags" : ["digital"]
     },
-
-    {
-        "title" : "And The World Went Dark",
-        "description" : "Combat the forces of the darkness as you traverse a dying world." ,
-        "imgSrc" : "/assets/title_cards/atwwd.png",
-        "refSrc" : "https://docterbuster.itch.io/and-the-world-went-dark",
-        "tagDict" : [
-            ["Programmer", "MediumSeaGreen"],
-            ["Godot Mono", "LightSeaGreen"],
-            ["Yarn Spinner", "LightSeaGreen"],
-            ["Github", "LightSeaGreen"],
-            ["GDScript", "Plum"],
-            ["C#", "Plum"]
-        ],
-        "metaTags" : ["digital"]
-    },
-
-    {
-        "title" : "DigiDiva",
-        "description" : "As a chronically online influencer grow your fanbase and defend your image." ,
-        "imgSrc" : "/assets/title_cards/DigiDiva.png",
-        "refSrc" : "https://allisonvtnguyen.itch.io/digidiva",
-        "tagDict" : [
-            ["Programmer", "MediumSeaGreen"],
-            ["Audio", "MediumSeaGreen"],
-            ["Unreal Engine", "LightSeaGreen"],
-            ["Github", "LightSeaGreen"],
-            ["C++", "Plum"],
-            ["Blueprints", "Plum"]
-        ],
-        "metaTags" : ["highlight", "digital"]
-    },
     
     {
         "title" : "JamCorp3D",
@@ -81,6 +49,38 @@
             ["Blueprints", "Plum"]
         ],
         "metaTags" : ["highlight", "digital"]
+    },
+
+    {
+        "title" : "DigiDiva",
+        "description" : "As a chronically online influencer grow your fanbase and defend your image." ,
+        "imgSrc" : "/assets/title_cards/DigiDiva.png",
+        "refSrc" : "https://allisonvtnguyen.itch.io/digidiva",
+        "tagDict" : [
+            ["Programmer", "MediumSeaGreen"],
+            ["Audio", "MediumSeaGreen"],
+            ["Unreal Engine", "LightSeaGreen"],
+            ["Github", "LightSeaGreen"],
+            ["C++", "Plum"],
+            ["Blueprints", "Plum"]
+        ],
+        "metaTags" : ["highlight", "digital"]
+    },
+
+    {
+        "title" : "And The World Went Dark",
+        "description" : "Combat the forces of the darkness as you traverse a dying world." ,
+        "imgSrc" : "/assets/title_cards/atwwd.png",
+        "refSrc" : "https://docterbuster.itch.io/and-the-world-went-dark",
+        "tagDict" : [
+            ["Programmer", "MediumSeaGreen"],
+            ["Godot Mono", "LightSeaGreen"],
+            ["Yarn Spinner", "LightSeaGreen"],
+            ["Github", "LightSeaGreen"],
+            ["GDScript", "Plum"],
+            ["C#", "Plum"]
+        ],
+        "metaTags" : ["digital", "highlight"]
     },
 
     {
@@ -113,24 +113,6 @@
             ["GDScript", "Plum"]
         ],
         "metaTags" : ["digital"]
-    },
-
-    {
-        "title" : "C(AI)ndy.Land",
-        "description" : "Procedurally generate 'print and play' game boards with custom rulesets." ,
-        "imgSrc" : "/assets/title_cards/caindyLand.png",
-        "refSrc" : "https://marvelous-croquembouche-1082a4.netlify.app/",
-        "tagDict" : [
-            ["Programmer", "MediumSeaGreen"],
-            ["Designer", "MediumSeaGreen"],
-            ["Svelte", "LightSeaGreen"],
-            ["Github", "LightSeaGreen"],
-            ["HTML", "Plum"],
-            ["JavaScript", "Plum"],
-            ["CSS", "Plum"],
-            ["WebGL", "Plum"]
-        ],
-        "metaTags" : ["application", "tabletop"]
     },
 
     {
@@ -211,7 +193,62 @@
             ["C#", "Plum"]
         ],
         "metaTags" : ["digital"]
+    },
+
+    {
+        "title" : "C(AI)ndy.Land",
+        "description" : "Procedurally generate 'print and play' game boards with custom rulesets." ,
+        "imgSrc" : "/assets/title_cards/caindyLand.png",
+        "refSrc" : "https://marvelous-croquembouche-1082a4.netlify.app/",
+        "tagDict" : [
+            ["Programmer", "MediumSeaGreen"],
+            ["Designer", "MediumSeaGreen"],
+            ["Svelte", "LightSeaGreen"],
+            ["Github", "LightSeaGreen"],
+            ["HTML", "Plum"],
+            ["JavaScript", "Plum"],
+            ["CSS", "Plum"],
+            ["WebGL", "Plum"]
+        ],
+        "metaTags" : ["application", "tabletop"]
+    },
+
+    {
+        "title" : "Bizarre Bazaar",
+        "description" : "Lie, lowball, and scalp in this haggling improv card game.",
+        "imgSrc" : "/assets/title_cards/bizarreBizarre.png",
+        "refSrc" : "https://mr-neptune.itch.io/bizarre-bazaar",
+        "tagDict" : [
+            ["Designer", "MediumSeaGreen"],
+            ["Writer", "MediumSeaGreen"]
+        ],
+        "metaTags" : ["tabletop"]
+    },
+
+    {
+        "title" : "Curio's Cabinet",
+        "description" : "Proptotype for a narrative and puzzle driven 'escape room' in a cabinet.",
+        "imgSrc" : "/assets/title_cards/curiosCabinet.png",
+        "refSrc" : "",
+        "tagDict" : [
+            ["Designer", "MediumSeaGreen"],
+            ["Artist", "MediumSeaGreen"]
+        ],
+        "metaTags" : ["tabletop", "other"]
     },    
+
+    {
+        "title" : "The Legend of the Tynn",
+        "description" : "A 2024 ARG about a cryptid stealing items from a university.",
+        "imgSrc" : "/assets/title_cards/legendOfTheTynn.png",
+        "refSrc" : "",
+        "tagDict" : [
+            ["Programmer", "MediumSeaGreen"],
+            ["Designer", "MediumSeaGreen"],
+            ["Artist", "MediumSeaGreen"]
+        ],
+        "metaTags" : ["other"]
+    }, 
 
     {
         "title" : "Tables4U",
@@ -261,42 +298,5 @@
             ["Python", "Plum"]
         ],
         "metaTags" : ["application"]
-    },
-
-    {
-        "title" : "Bizarre Bazaar",
-        "description" : "Lie, lowball, and scalp in this haggling improv card game.",
-        "imgSrc" : "/assets/title_cards/bizarreBizarre.png",
-        "refSrc" : "https://mr-neptune.itch.io/bizarre-bazaar",
-        "tagDict" : [
-            ["Designer", "MediumSeaGreen"],
-            ["Writer", "MediumSeaGreen"]
-        ],
-        "metaTags" : ["tabletop"]
-    },
-
-    {
-        "title" : "Curio's Cabinet",
-        "description" : "Proptotype for a narrative and puzzle driven 'escape room' in a cabinet.",
-        "imgSrc" : "/assets/title_cards/curiosCabinet.png",
-        "refSrc" : "",
-        "tagDict" : [
-            ["Designer", "MediumSeaGreen"],
-            ["Artist", "MediumSeaGreen"]
-        ],
-        "metaTags" : ["tabletop", "other"]
-    },    
-
-    {
-        "title" : "The Legend of the Tynn",
-        "description" : "A 2024 ARG about a cryptid stealing items from a university.",
-        "imgSrc" : "/assets/title_cards/legendOfTheTynn.png",
-        "refSrc" : "",
-        "tagDict" : [
-            ["Programmer", "MediumSeaGreen"],
-            ["Designer", "MediumSeaGreen"],
-            ["Artist", "MediumSeaGreen"]
-        ],
-        "metaTags" : ["other"]
     }
 ]

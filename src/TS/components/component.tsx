@@ -40,6 +40,7 @@ type TagProps = {
 
 //MetaTag union type validate tag data
 type MetaTag =
+  | "all"
   | "highlight"
   | "featured"
   | "digital"
@@ -158,9 +159,17 @@ function SocialBar() {
 
 //SUB BAR COMPONENT////////////////////////////////////////////////////////////////////////
 
-//
+//sub bar data
+type SubBarItem = {
+    label:string,
+    tag:MetaTag
+}
+
+//sub bar data
 type SubBarProps = {
-    items:Array<string>,
+    items:Array<SubBarItem>,
+    setFilter: (tag:MetaTag) => void
+
 }
 
 //sub bars hold multiple buttons that change behaviour on a given page
@@ -168,7 +177,7 @@ function SubBar(subBarProps:SubBarProps) {
     return (
         <nav>
          {subBarProps.items.map((item, index) =>
-            <Link to ="" key = {index}>{item}</Link>)}
+            <button key = {index} onClick = {() => subBarProps.setFilter(item.tag)} >{item.label}</button>)}
         </nav>
     );
 
@@ -189,4 +198,4 @@ function ScrollToTop() {
 
 export { ProjectCard, NavBar, ScrollToTop, TextBlurb, SocialBar,ProjectTag, SubBar};
 
-export type {ProjectProps};
+export type {ProjectProps, MetaTag, SubBarItem};
