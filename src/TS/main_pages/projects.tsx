@@ -7,6 +7,8 @@ import {useState} from 'react'
 //component imports
 import { SubBar, ProjectCard } from '../components/component.tsx'
 import {type ProjectProps, type SubBarItem, type MetaTag} from '../components/component.tsx'
+
+//util imports
 import { filterRenderTargets } from '../utility/project_filter.tsx'
 
 //data imports
