@@ -5,14 +5,33 @@
 
 /*Text Blurb styling*/
 
-.text-blurb {
+.about-blurb {
+    width: 80%;
     margin-top: 10px;
     padding-bottom: 2%;
-    width: clamp(38vh, var(--text_box_width), 80%);
+    text-align: left;
+}
+
+.home-blurb {
+    width: 60%;
+    margin-top: 10px;
+    padding-bottom: 2%;
 }
 
 .text-section {
-        font-size: clamp(.5rem, var(--base_font_size), 2rem);
+    font-size: clamp(.5rem, var(--base_font_size), 2rem);
+}
+
+.about-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+
+.about-text {
+    flex: 1;
+    min-width: 0;
 }
 
 /*//////////////////////////////////////////////////////////*/

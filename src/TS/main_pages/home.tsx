@@ -27,14 +27,14 @@ function Home() {
 
   return (
     <div className= "page">
-       <br></br>
+       <br/>
       <Container className = "top-container">
-        <TextBlurb content={'Hello! I\'m Sebastian Lanz, aka [#22d1ce]Mr. Neptune[/], and welcome to my website! I\'m a [#22d1ce]game developer[/] and [#22d1ce]full-stack software engineer[/].'} 
+        <TextBlurb className = 'home-blurb' content={'Hello! I\'m Sebastian Lanz, aka [#22d1ce]Mr. Neptune[/], and welcome to my website! I\'m a [#22d1ce]game developer[/] and [#22d1ce]full-stack software engineer[/].'} 
            textColor='white'/>
       </Container>
 
       <Container className = "top-container">
-        <TextBlurb content={'Although I specialize as a programmer and designer, I often enjoy forays into production, pixel art, and audio design :).'} 
+        <TextBlurb className = 'home-blurb' content={'Although I specialize as a programmer and designer, I often enjoy forays into production, pixel art, and audio design :).'} 
            textColor='white'/>
       </Container>
 

@@ -29,3 +29,11 @@
     margin-bottom: 1rem;
     color:var(--primary_color);
 }
+/*//////////////////////////////////////////////////////////*/
+
+/*Portrait image styling*/
+.portrait {
+    width: 20rem;
+    border-radius: 10px;
+}
+/*//////////////////////////////////////////////////////////*/

@@ -79,6 +79,7 @@ function ProjectTag(tagProps:TagProps) {
 
 //TEXT BLURB COMPONENT/////////////////////////////////////////////////////////////////////
 type TextBlurbProps = {
+className:string,
 content:string,
 backgroundColor?:string,
 textColor?:string,
@@ -91,7 +92,7 @@ const dict:Map<string,string> = Parser.colorHighlighter(textBlurbProps.content)
 
     return ( 
         <div
-            className="text-blurb"
+            className = {textBlurbProps.className}
             style={{backgroundColor: textBlurbProps.backgroundColor,
                 color: textBlurbProps.textColor,
             }}>
