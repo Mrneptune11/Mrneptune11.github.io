@@ -44,8 +44,6 @@ function chooseFavIcon() {
 
     const favicon = document.getElementById("favicon") as HTMLLinkElement;
     favicon.href = randomIcon;
-
-    console.log(randomIcon)
 }
 
 export {filterRenderTargets, chooseFavIcon}
