@@ -12,7 +12,7 @@ import "../routes.tsx"
 import { useEffect } from "react"
 
 //Asset imports
-import { EmailIcon, LinkedInIcon, ItchIcon, HomeIcon, AboutIcon, ProjectIcon, ResumeIcon } from "./svg_embeds.tsx"
+import { EmailIcon, LinkedInIcon, ItchIcon, HomeIcon, AboutIcon, ProjectIcon, ResumeIcon, GitHubIcon } from "./svg_embeds.tsx"
 import header from "/assets/pixel/Header.png"
 
 //Util imports
@@ -164,6 +164,9 @@ function SocialBar() {
                 </a>
                 <a href="mailto:sebastianlanz301@gmail.com" >
                     <EmailIcon colorFill=""/>
+                </a>
+                <a href="https://github.com/Mrneptune11" >
+                    <GitHubIcon colorFill=""></GitHubIcon>
                 </a>
         </div>
     )
