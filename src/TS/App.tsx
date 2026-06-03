@@ -1,7 +1,7 @@
 //App page
 
 //react imports
-import { HashRouter } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import { useEffect } from "react";
 
 //component imports
@@ -20,15 +20,14 @@ function App() {
     }, []);
 
     return (
-        <HashRouter>
+        <BrowserRouter>
             <ScrollToTop />
             <NavBar />
             <div className = "routing">
                 <Routing />
             </div>
-            <SocialBar/>
-            
-        </HashRouter>
+            <SocialBar/> 
+        </BrowserRouter>
     );
 }
 
