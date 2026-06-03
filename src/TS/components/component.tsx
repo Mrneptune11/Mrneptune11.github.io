@@ -2,7 +2,7 @@
 
 //library imports
 import { Card, CardLink, Container } from "react-bootstrap"
-import { Link, useLocation } from "react-router-dom"
+import { Link, useLocation, useSearchParams} from "react-router-dom"
 
 //CSS imports
 import '../../CSS/component.css'
@@ -47,6 +47,7 @@ type MetaTag =
   | "tabletop"
   | "application"
   | "other"
+  | "error"
 
 //component function
 function ProjectCard(projectProps: ProjectProps) {
@@ -184,15 +185,66 @@ type SubBarProps = {
 
 }
 
+
+
 //sub bars hold multiple buttons that change behaviour on a given page
 function SubBar(subBarProps:SubBarProps) {
+
+    const [searchParams, setSearchParams] = useSearchParams();
+    const defaultParam:string = subBarProps.items[0].label
+    const currentSort = searchParams.get("sort") ?? defaultParam;
+
+    //sets the default sort for the page
+    useEffect(() => {
+        if (!searchParams.has("sort")) {
+            setSearchParams({ sort: defaultParam });
+        }
+    }, [searchParams, setSearchParams, defaultParam]);
+
+    //helper function for handlign click on sub bar item
+    function subClick(subBarProps:SubBarProps, item:SubBarItem) {
+        subBarProps.setFilter(item.tag);
+        setSearchParams({ sort: item.label});
+    }
+
+    //updates page sort based on the current loaded sort
+    useEffect(() => {
+        const item = findItem(subBarProps, currentSort);
+
+        if (item) {
+            subBarProps.setFilter(item.tag);
+        }
+    },[subBarProps, currentSort]);
+
     return (
-        <nav>
-         {subBarProps.items.map((item, index) =>
-            <button key = {index} onClick = {() => subBarProps.setFilter(item.tag)} >{item.label}</button>)}
+        <nav className = "sub-bar">    
+            <br/>
+            {subBarProps.items.map((item, index) =>
+            <button key = {index} onClick = {() => subClick(subBarProps,item)} style = {updateStyle(currentSort,item.label)} >{item.label}</button>)}
         </nav>
     );
 
+}
+
+function updateStyle(curSort:string, key:string):React.CSSProperties {
+
+    return {textDecoration : curSort === key ? "underline" : "none",
+            color : curSort === key ? "white" : "#535bf2"
+    }
+}
+
+function findItem(subBarProps:SubBarProps, label:string):SubBarItem {
+    const items:Array<SubBarItem> = subBarProps.items;
+
+    for (let i = 0; i < items.length; i++) {
+        const item:SubBarItem = items[i]
+
+        if (item.label === label) {
+            return item;
+        }
+    }
+
+    return { label: "Fatal", tag : "error"}
 }
 ///////////////////////////////////////////////////////////////////////////////////////////
 

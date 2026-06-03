@@ -184,9 +184,20 @@
 
 /*//////////////////////////////////////////////////////////*/
 
+/*Sub bar styling*/
+.sub-bar {
+    button {
+        margin: 5px;
+        margin-bottom: 20px;
+        color: #535bf2;
+    }
+    
+}
+/*//////////////////////////////////////////////////////////*/
+
 /*routing*/ 
 .routing {
-    margin-top: 5%;
+  margin-top: 5%;
   margin-left: 10%;
   margin-bottom: 5%;
   margin-right: 10%;
