@@ -27,12 +27,18 @@ function Home() {
 
   return (
     <div className= "page">
-      <h1 className="page-title">Home</h1>
+       <br></br>
       <Container className = "top-container">
-        <TextBlurb content={'Hello! I\'m Sebastian Lanz, aka [#22d1ce]Mr.Neptune[/], and welcome to my website! I\'m a [#22d1ce]game developer[/] and [#22d1ce]full-stack software engineer[/].'} 
+        <TextBlurb content={'Hello! I\'m Sebastian Lanz, aka [#22d1ce]Mr. Neptune[/], and welcome to my website! I\'m a [#22d1ce]game developer[/] and [#22d1ce]full-stack software engineer[/].'} 
            textColor='white'/>
       </Container>
 
+      <Container className = "top-container">
+        <TextBlurb content={'Although I specialize as a programmer and designer, I often enjoy forays into production, pixel art, and audio design :).'} 
+           textColor='white'/>
+      </Container>
+
+      <h1 className="page-title">Featured Projects</h1>
       <Container className = "project-container">
         {featuredProjects.map((project) => (
             <ProjectCard key={project.title} {...project}/>

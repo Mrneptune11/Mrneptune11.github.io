@@ -6,6 +6,7 @@
 /*Text Blurb styling*/
 
 .text-blurb {
+    margin-top: 10px;
     padding-bottom: 2%;
     width: clamp(38vh, var(--text_box_width), 80%);
 }
