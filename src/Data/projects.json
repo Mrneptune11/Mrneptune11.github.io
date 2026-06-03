@@ -298,5 +298,18 @@
             ["Python", "Plum"]
         ],
         "metaTags" : ["application"]
+    },
+
+        {
+        "title" : "Fake NES Cheat Codes Bot",
+        "description" : "A Bluesky bot that makes up non-existent cheat codes for NES games.",
+        "imgSrc" : "/assets/title_cards/fakeNESCheatCodeBot.png",
+        "refSrc" : "https://bsky.app/profile/verymuchabot.bsky.social",
+        "tagDict" : [
+            ["Programmer", "MediumSeaGreen"],
+            ["BlueBotsDoneQuick", "LightSeaGreen"],
+            ["Tracery", "Plum"]
+        ],
+        "metaTags" : ["application", "other"]
     }
 ]

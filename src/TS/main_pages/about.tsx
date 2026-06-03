@@ -20,7 +20,7 @@ function About() {
                     }
                     />
                     <TextBlurb className = 'about-blurb' content= {`My current big project is [mediumorchid]Myndspell:The Wizard Maze[/], 
-                    an RPG that explores mental health and the human psyche. Alongside this game I am always looking for game jams as 
+                    an RPG that explores mental health and the human psyche. Alongside Myndspell, I am always looking for game jams as 
                     opportunities to create something new.`
                     }
                     />
