@@ -23,4 +23,29 @@ function filterRenderTargets(potentialTargets:Array<ProjectProps>, filter:MetaTa
     
 }
 
-export {filterRenderTargets}
+
+
+//choose a random favicon for fun
+function chooseFavIcon() {
+    const favicons:Array<string> = [
+    '/assets/favicon/grapeBoy.png',
+    '/assets/favicon/angy_rock_smile-export.png',
+    '/assets/favicon/grimpy1.png',
+    '/assets/favicon/jamcorpIcon.png',
+    '/assets/favicon/minister-export.png',
+    '/assets/favicon/netWorkJamEnemy.png',
+    '/assets/favicon/Trumbus1.png',
+    '/assets/favicon/Time Thyme.png',
+    '/assets/favicon/forg-export.png',
+    ]
+
+    const randomIcon =
+        favicons[Math.floor(Math.random() * favicons.length)];
+
+    const favicon = document.getElementById("favicon") as HTMLLinkElement;
+    favicon.href = randomIcon;
+
+    console.log(randomIcon)
+}
+
+export {filterRenderTargets, chooseFavIcon}
