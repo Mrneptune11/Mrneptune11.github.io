@@ -34,7 +34,7 @@ function Home() {
       </Container>
 
       <Container className = "top-container">
-        <TextBlurb className = 'home-blurb' content={'Although I specialize as a programmer and designer, I often enjoy forays into production, pixel art, and audio design :).'} 
+        <TextBlurb className = 'home-blurb' content={'Although I specialize as a programmer and designer, I often enjoy forays into production and pixel art :).'} 
            textColor='white'/>
       </Container>
 

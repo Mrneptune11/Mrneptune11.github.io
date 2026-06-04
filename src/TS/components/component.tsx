@@ -221,8 +221,7 @@ function SubBar(subBarProps:SubBarProps) {
     },[subBarProps, currentSort]);
 
     return (
-        <nav className = "sub-bar">    
-            <br/>
+        <nav className = "sub-bar">  
             {subBarProps.items.map((item, index) =>
             <button key = {index} onClick = {() => subClick(subBarProps,item)} style = {updateStyle(currentSort,item.label)} >{item.label}</button>)}
         </nav>

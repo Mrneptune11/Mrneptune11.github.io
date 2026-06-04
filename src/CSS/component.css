@@ -19,7 +19,7 @@
 }
 
 .text-section {
-    font-size: clamp(.5rem, var(--base_font_size), 2rem);
+    font-size: clamp(.7rem, var(--base_font_size), 2rem);
 }
 
 .about-container {
@@ -37,6 +37,30 @@
     max-width: 60rem;
 }
 
+@media (max-width: 768px) {
+    .home-blurb {
+        width: 100%;
+        margin-top: 10px;
+        padding-bottom: 2%;
+    }
+
+    .about-container {
+        margin-top: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 1rem;
+        flex-direction: column !important;
+        
+    }
+
+    .about-blurb {
+        width: 100%;
+        margin-top: 5px;
+        padding-bottom: 2%;
+        text-align: center;
+    }
+}
 /*//////////////////////////////////////////////////////////*/
 
 /*Project Card styling*/
@@ -70,7 +94,6 @@
     background-size: 200% 100%;
     animation: shimmer 10s linear infinite;
     text-decoration: underline;
-
 }
 
 .project-card .card-title:hover {
@@ -124,6 +147,39 @@
     padding: 2px 8px;
 
 }
+
+@media (max-width: 768px) {
+    .project-card {
+        box-shadow: 0 4px 8px 0 var(--shadow_color);
+        transition: 0.3s;
+        padding: 1rem;
+        background-color: var(--dark_color);
+        border-radius: 10px;
+        max-width: 300px;
+        color: var(--primary_color);
+        min-height: 150px;
+    }
+
+    .project-card .card-title {
+        max-width: 100%;
+        height: auto;
+        font: bold;
+        font-size: .6rem;
+        text-transform: uppercase;
+        background: linear-gradient(135deg, var(--primary_color), #aafffe, var(--primary_color));
+        background-clip: text;
+        color: transparent;
+        background-size: 200% 100%;
+        animation: shimmer 10s linear infinite;
+        text-decoration: underline;
+    }
+
+    .project-card .card-description {
+        max-width: 100%;
+        height: auto;
+        font-size: .4rem;
+    }
+}
 /*//////////////////////////////////////////////////////////*/
 
 /*NavBar styling*/
@@ -150,7 +206,7 @@
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    font-size: clamp(0.9rem, 2vw, 1.5rem);
+    font-size: clamp(0.7rem, 2vw, 1.5rem);
     transition: 0.3s;
     max-width: 10%;
 }
@@ -180,6 +236,35 @@
     height: auto; 
     transition: 0.3s;
     padding-right: 5%;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        z-index: 1000;
+        display: flex;
+        background-color: #333;
+        position: fixed; 
+        width: 100%;
+        left: 0;
+        top: 0; 
+        min-height: 7%;
+        align-items: center;
+        box-sizing: border-box;
+        box-shadow: 0 2px 3px 0 var(--highlight_color);
+        justify-content: space-around;
+    }
+    .navbar .navicon {
+        display:none;
+    }
+
+    .navbar a:hover {
+        background-color: var(--dark_color);
+        color: var(--highlight_color);
+        text-decoration: underline;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 1px 1px 1px 1px var(--highlight_color);
+    }
 }
 
 /*//////////////////////////////////////////////////////////*/
@@ -215,6 +300,22 @@
         color: #535bf2;
     }
     
+}
+
+@media (max-width: 768px) {
+    .sub-bar {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+        margin-bottom: 5px;
+    }
+
+    .sub-bar button {
+        flex: 0 0 calc(33.333% - 5px);
+        margin: 0;
+        font-size: 8px;
+    }
 }
 /*//////////////////////////////////////////////////////////*/
 
@@ -252,14 +353,31 @@
     margin-top: 5px;
     margin-bottom: -5px;
     margin-left: 5px;
-
-    color: var(--primary_color)
+    color: var(--primary_color);
+    font-size: clamp(.7rem, var(--base_font_size), 2rem);
 }
 
 .info-blurb {
     margin-top: 5px;
     padding-bottom: 2%;
     margin-left: 5px;
+    font-size: clamp(.5rem, 1vw, 1.5rem);
+}
+
+@media (max-width: 768px) {
+    .blurb-container {
+    background-color: var(--shade_color);
+    text-align: left;
+    justify-content: flex-start !important;
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    min-height: 400px;
+    gap: 2px !important;
+
+    border-radius: 2px;
+    box-shadow: 0 4px 8px 0 var(--shadow_color)
+}
 }
 
 /*//////////////////////////////////////////////////////////*/

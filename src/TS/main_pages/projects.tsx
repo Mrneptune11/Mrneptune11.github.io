@@ -32,6 +32,7 @@ function Projects() {
 
     return (
         <div className="page">
+            <br/>
             <SubBar items={items} setFilter={setFilter}></SubBar>
                 <Container className = "project-container">
                     {renderTargets.map((project) => (

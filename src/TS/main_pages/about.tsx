@@ -50,7 +50,7 @@ function About() {
                     />
                 </div>
             </Container>
-            <br/>
+            <br/><br/>
             <SubBar items={items} setFilter = {setFilter}></SubBar>
             <Container className = 'info-container'>
                 <SkillBlurb{...setInfoBox(filter as MetaTag, info)}/>

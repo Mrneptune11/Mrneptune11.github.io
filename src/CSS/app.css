@@ -29,6 +29,15 @@
     margin-bottom: 1rem;
     color:var(--primary_color);
 }
+
+@media (max-width: 768px) {
+    .page-title {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+        color:var(--primary_color);
+    }   
+}
 /*//////////////////////////////////////////////////////////*/
 
 /*Portrait image styling*/
@@ -37,10 +46,25 @@
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 var(--shadow_color);
 }
+
+@media (max-width: 768px) {
+    .portrait {
+        width: 12rem;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px 0 var(--shadow_color);
+    }
+}
 /*//////////////////////////////////////////////////////////*/
 
 /*sub point styling*/
 .sub-point {
     color: var(--primary_color);
+}
+
+@media (max-width: 768px) {
+    .sub-point {
+        color: var(--primary_color);
+        font-size: 10px;
+    }
 }
 /*//////////////////////////////////////////////////////////*/
