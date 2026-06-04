@@ -1,5 +1,5 @@
 //type imports
-import { type ProjectProps, type MetaTag} from "../components/component";
+import {type SkillBlurbProps, type ProjectProps, type MetaTag} from "../components/component";
 
 //filter project data and returns targets according to tags
 function filterRenderTargets(potentialTargets:Array<ProjectProps>, filter:MetaTag):Array<ProjectProps> {
@@ -23,6 +23,21 @@ function filterRenderTargets(potentialTargets:Array<ProjectProps>, filter:MetaTa
     
 }
 
+//sets the info box on about page
+function setInfoBox(filter:MetaTag, info:Array<SkillBlurbProps>):SkillBlurbProps {
+
+    for (let i = 0; i < info.length; i++) {
+        const prop:SkillBlurbProps = info[i];
+
+        if (filter === prop.tag as MetaTag) {
+            return prop;
+        }
+    }
+
+    return( {tag : "error",
+            pairs : []
+    })
+}
 
 
 //choose a random favicon for fun
@@ -46,4 +61,4 @@ function chooseFavIcon() {
     favicon.href = randomIcon;
 }
 
-export {filterRenderTargets, chooseFavIcon}
+export {filterRenderTargets, chooseFavIcon, setInfoBox}

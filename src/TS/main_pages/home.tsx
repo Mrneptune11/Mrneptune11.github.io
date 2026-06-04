@@ -22,8 +22,8 @@ import projectData from '../../Data/projects.json'
 //home page contents
 function Home() {
 
-      const projects = projectData as Array<ProjectProps>
-    const featuredProjects:Array<ProjectProps> = filterRenderTargets(projects, "featured")
+  const projects = projectData as Array<ProjectProps>
+  const featuredProjects:Array<ProjectProps> = filterRenderTargets(projects, "featured")
 
   return (
     <div className= "page">

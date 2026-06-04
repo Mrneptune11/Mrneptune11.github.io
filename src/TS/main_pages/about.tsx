@@ -2,11 +2,31 @@
 
 //react imports
 import { Container } from "react-bootstrap"
+import { useState } from "react";
 
 //component imports
-import { TextBlurb } from "../components/component"
+import { TextBlurb, type MetaTag, type SubBarItem, SubBar, SkillBlurb, type SkillBlurbProps  } from "../components/component"
+
+//util imports
+import { setInfoBox } from "../utility/project_filter";
+
+//data imports
+import infoData from '../../Data/info_blurbs.json'
 
 function About() {
+
+    const [filter, setFilter] = useState<string>("skills");
+    const info:Array<SkillBlurbProps> = infoData as Array<SkillBlurbProps>
+
+    const items:Array<SubBarItem> = [
+        {label: "Skills", tag : "skills" as MetaTag},
+        {label: "Experience", tag : "experience" as MetaTag},
+        {label: "Education", tag : "education" as MetaTag},
+        {label: "Activities", tag : "activities" as MetaTag},
+
+    ];
+
+    
 
     return (
         <div className="page">
@@ -20,8 +40,8 @@ function About() {
                     }
                     />
                     <TextBlurb className = 'about-blurb' content= {`My current big project is [mediumorchid]Myndspell:The Wizard Maze[/], 
-                    an RPG that explores mental health and the human psyche. Alongside Myndspell, I am always looking for game jams as 
-                    opportunities to create something new.`
+                    an RPG that explores mental health and the human psyche. Alongside Myndspell, I am always looking for game jams and hackathons 
+                    as opportunities to create something new.`
                     }
                     />
                     <TextBlurb className = 'about-blurb' content= {`Outside of my creative works, I enjoy watching movies, visiting amusement parks 
@@ -32,6 +52,11 @@ function About() {
 
                 </div>
             </Container>
+            <SubBar items={items} setFilter = {setFilter}></SubBar>
+            <Container className = 'info-container'>
+                <SkillBlurb{...setInfoBox(filter as MetaTag, info)}/>
+            </Container>
+
         </div>
     )
 }

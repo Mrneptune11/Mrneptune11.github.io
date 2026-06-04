@@ -24,10 +24,8 @@ function Resume() {
 
     return (
         <div className="page">
-            
             <SubBar items={items} setFilter={setFilter}></SubBar>
             <embed src={filter} type="application/pdf" width="100%" height="800px" />
-            
         </div>
     )
 }

@@ -252,6 +252,31 @@ function findItem(subBarProps:SubBarProps, label:string):SubBarItem {
 }
 ///////////////////////////////////////////////////////////////////////////////////////////
 
+//INFO BLURB COMPONENT/////////////////////////////////////////////////////////////////////
+type SkillPair = {
+    section:string,
+    skills:string,
+}
+
+type SkillBlurbProps = {
+    tag:string,
+    pairs:Array<SkillPair>
+}
+
+
+function SkillBlurb(skillBlurbProps:SkillBlurbProps) {
+    return (
+        <Container className = "blurb-container">
+            {skillBlurbProps.pairs.map((skillPair, index) => 
+            <div>
+                <h3 key = {index} className = 'info-section'>{skillPair.section}</h3>
+                <p className = "info-blurb">{skillPair.skills}</p>
+            </div>
+            )}
+        </Container>
+    );
+}
+///////////////////////////////////////////////////////////////////////////////////////////
 
 //SCROLL COMPONENT/////////////////////////////////////////////////////////////////////////
 //used to scroll to the top of page when rerouting
@@ -264,6 +289,6 @@ function ScrollToTop() {
 }
 ///////////////////////////////////////////////////////////////////////////////////////////
 
-export { ProjectCard, NavBar, ScrollToTop, TextBlurb, SocialBar,ProjectTag, SubBar};
+export { ProjectCard, NavBar, ScrollToTop, TextBlurb, SocialBar,ProjectTag, SubBar, SkillBlurb};
 
-export type {ProjectProps, MetaTag, SubBarItem};
+export type {ProjectProps, MetaTag, SubBarItem, SkillBlurbProps};

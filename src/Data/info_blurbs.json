@@ -1,0 +1,90 @@
+[
+    {
+        "tag" : "skills", 
+
+        "pairs" : [
+            { 
+                "section" : "Programming Languages",
+                "skills" : "C++, C#, Java, Javascript, TypeScript, Python, GDScript, Lua, HTML, CSS, SQL"
+            },
+            { 
+                "section" : "Game Engines",
+                "skills" : "Godot, Unreal Engine, Unity, Pico-8"
+            },
+            { 
+                "section" : "Frameworks",
+                "skills" : "ReactJS, Express.js, Next.js, Bootstrap, Tailwind CSS, Pygame"
+            },
+            { 
+                "section" : "Software",
+                "skills" : "Git, Github, Visual Studio, VS Code, Jira, Aseprite, Wwise, MongoDB, MySQL, Microsoft Office Suite"
+            },             
+            { 
+                "section" : "Other",
+                "skills" : "Project Management, Agile Scrum, Spanish Language(Conversational), Japanese Language(Beginner)"
+            }
+
+        ]
+    },
+
+    {
+        "tag" : "experience", 
+
+        "pairs" : [
+            { 
+                "section" : "ROVOP (2019)",
+                "skills" : "Engineering Intern"
+            },
+            { 
+                "section" : "Louis Tata Software Engineer (2020)",
+                "skills" : "Mobile Applications Development Intern"
+            },
+            { 
+                "section" : "Independent Developer (2021-present)",
+                "skills" : "Programmer, Designer, Producer, and Artist"
+            },
+            { 
+                "section" : "WPI Teaching Assistant (2026)",
+                "skills" : "Interactive Media Peer Learning Assistant"
+            }
+        ]
+    },
+
+    {
+        "tag" : "education", 
+
+        "pairs" : [
+            { 
+                "section" : "Worcester Polytechnic Institute (2022-2026)",
+                "skills" : "Computer Science and Interactive Media Double Major (BS)"
+            }
+        ]
+    },
+
+    {
+        "tag" : "activities", 
+
+        "pairs" : [
+            { 
+                "section" : "PAX East Volunteer (2024, 2025, 2026)",
+                "skills" : "WPI Booth Volunteer"
+            },
+            { 
+                "section" : "PAX East Exhibitor (2026)",
+                "skills" : "WPI Booth Project Exhibitor"
+            },
+            { 
+                "section" : "WPI Video Game Club Treasurer (2024-2025)",
+                "skills" : "Budget and Inventory Manager"
+            },
+            { 
+                "section" : "International Game Developer Association (2023-2026)",
+                "skills" : "WPI Chapter Member and Game Jam Participant"
+            },
+            { 
+                "section" : "London Museum Interactive Exhibit Research (2025)",
+                "skills" : "WPI Global Project Participant"
+            }
+        ]
+    }
+]
