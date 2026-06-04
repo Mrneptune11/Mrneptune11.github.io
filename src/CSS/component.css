@@ -23,6 +23,7 @@
 }
 
 .about-container {
+    margin-top: 10px;
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
@@ -239,15 +240,20 @@
     justify-content: flex-start !important;
     display: flex;
     flex-direction: column;
-    width: 600px;
-    min-height: 500px;
+    width: 800px;
+    min-height: 520px;
     gap: 2px !important;
+
+    border-radius: 2px;
+    box-shadow: 0 4px 8px 0 var(--shadow_color)
 }
 
 .info-section {
     margin-top: 5px;
     margin-bottom: -5px;
     margin-left: 5px;
+
+    color: var(--primary_color)
 }
 
 .info-blurb {

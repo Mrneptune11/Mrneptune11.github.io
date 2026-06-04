@@ -97,7 +97,7 @@
             ["C++", "Plum"],
             ["SFML", "Plum"]
         ],
-        "metaTags" : ["digital"]
+        "metaTags" : ["highlight","digital"]
     },
 
     {
@@ -114,6 +114,23 @@
         ],
         "metaTags" : ["digital"]
     },
+
+    {
+        "title" : "Happy Helpers™",
+        "description" : "Lost in a mysterious plane outside of reality, try to find you way back home." ,
+        "imgSrc" : "/assets/title_cards/happyHelpers.png",
+        "refSrc" : "https://mr-neptune.itch.io/happy-helpers",
+        "tagDict" : [
+            ["Programmer", "MediumSeaGreen"],
+            ["Artist", "MediumSeaGreen"],
+            ["Writer", "MediumSeaGreen"],
+            ["Designer", "MediumSeaGreen"],
+            ["Godot", "LightSeaGreen"],
+            ["Github", "LightSeaGreen"],
+            ["GDScript", "Plum"]
+        ],
+        "metaTags" : ["digital"]
+    }, 
 
     {
         "title" : "Grabby Gremlins",
@@ -144,24 +161,7 @@
             ["GDScript", "Plum"]
         ],
         "metaTags" : ["digital"]
-    },
-
-    {
-        "title" : "Happy Helpers™",
-        "description" : "Lost in a mysterious plane outside of reality, try to find you way back home." ,
-        "imgSrc" : "/assets/title_cards/happyHelpers.png",
-        "refSrc" : "https://mr-neptune.itch.io/happy-helpers",
-        "tagDict" : [
-            ["Programmer", "MediumSeaGreen"],
-            ["Artist", "MediumSeaGreen"],
-            ["Writer", "MediumSeaGreen"],
-            ["Designer", "MediumSeaGreen"],
-            ["Godot", "LightSeaGreen"],
-            ["Github", "LightSeaGreen"],
-            ["GDScript", "Plum"]
-        ],
-        "metaTags" : ["digital"]
-    },    
+    },   
 
     {
         "title" : "Thyme Time",
@@ -181,7 +181,7 @@
 
     {
         "title" : "Project Spookems",
-        "description" : "While trick or treating, find a creepy mansion that surely hides candy inside." ,
+        "description" : "While trick or treating, explore a mansion that must hide candy inside." ,
         "imgSrc" : "/assets/title_cards/projectSpookems.png",
         "refSrc" : "https://pkmnhx43.itch.io/project-spookems",
         "tagDict" : [
@@ -282,7 +282,7 @@
             ["Typescript", "Plum"],
             ["Javascript", "Plum"]
         ],
-        "metaTags" : ["highlight","application"]
+        "metaTags" : ["application"]
     },   
 
     {

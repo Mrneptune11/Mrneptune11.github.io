@@ -35,5 +35,12 @@
 .portrait {
     width: 20rem;
     border-radius: 10px;
+    box-shadow: 0 4px 8px 0 var(--shadow_color);
+}
+/*//////////////////////////////////////////////////////////*/
+
+/*sub point styling*/
+.sub-point {
+    color: var(--primary_color);
 }
 /*//////////////////////////////////////////////////////////*/

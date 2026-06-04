@@ -5,7 +5,7 @@
         "pairs" : [
             { 
                 "section" : "Programming Languages",
-                "skills" : "C++, C#, Java, Javascript, TypeScript, Python, GDScript, Lua, HTML, CSS, SQL"
+                "skills" : "C++, C#, Java, JavaScript, TypeScript, Python, GDScript, Lua, HTML, CSS, SQL"
             },
             { 
                 "section" : "Game Engines",
@@ -21,7 +21,7 @@
             },             
             { 
                 "section" : "Other",
-                "skills" : "Project Management, Agile Scrum, Spanish Language(Conversational), Japanese Language(Beginner)"
+                "skills" : "Project Management, Agile Scrum, Spanish Language (Conversational), Japanese Language (Beginner)"
             }
 
         ]
@@ -32,19 +32,19 @@
 
         "pairs" : [
             { 
-                "section" : "ROVOP (2019)",
+                "section" : "ROVOP | (2019)",
                 "skills" : "Engineering Intern"
             },
             { 
-                "section" : "Louis Tata Software Engineer (2020)",
+                "section" : "Louis Tata Software Engineer | (2020)",
                 "skills" : "Mobile Applications Development Intern"
             },
             { 
-                "section" : "Independent Developer (2021-present)",
+                "section" : "Independent Developer | (2022-present)",
                 "skills" : "Programmer, Designer, Producer, and Artist"
             },
             { 
-                "section" : "WPI Teaching Assistant (2026)",
+                "section" : "WPI Teaching Assistant | (2026)",
                 "skills" : "Interactive Media Peer Learning Assistant"
             }
         ]
@@ -55,8 +55,8 @@
 
         "pairs" : [
             { 
-                "section" : "Worcester Polytechnic Institute (2022-2026)",
-                "skills" : "Computer Science and Interactive Media Double Major (BS)"
+                "section" : "Worcester Polytechnic Institute | (2022-2026)",
+                "skills" : "Computer Science and Interactive Media Double Major (BS) - Graduated with high distinction"
             }
         ]
     },
@@ -66,24 +66,28 @@
 
         "pairs" : [
             { 
-                "section" : "PAX East Volunteer (2024, 2025, 2026)",
+                "section" : "PAX East Volunteer | (2024, 2025, 2026)",
                 "skills" : "WPI Booth Volunteer"
             },
             { 
-                "section" : "PAX East Exhibitor (2026)",
+                "section" : "PAX East Exhibitor | (2026)",
                 "skills" : "WPI Booth Project Exhibitor"
             },
             { 
-                "section" : "WPI Video Game Club Treasurer (2024-2025)",
+                "section" : "WPI Video Game Club Treasurer | (2024-2025)",
                 "skills" : "Budget and Inventory Manager"
             },
             { 
-                "section" : "International Game Developer Association (2023-2026)",
+                "section" : "International Game Developer Association | (2023-2026)",
                 "skills" : "WPI Chapter Member and Game Jam Participant"
             },
             { 
-                "section" : "London Museum Interactive Exhibit Research (2025)",
+                "section" : "London Museum Interactive Exhibit Research | (2025)",
                 "skills" : "WPI Global Project Participant"
+            }, 
+            { 
+                "section" : "WPI IMGD Program Branding Project | (2024)",
+                "skills" : "Lead Organizer"
             }
         ]
     }
