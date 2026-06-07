@@ -267,8 +267,8 @@ function SkillBlurb(skillBlurbProps:SkillBlurbProps) {
     return (
         <Container className = "blurb-container">
             {skillBlurbProps.pairs.map((skillPair, index) => 
-            <div>
-                <h3 key = {index} className = 'info-section'>{skillPair.section}</h3>
+            <div key = {index}>
+                <h3 className = 'info-section'>{skillPair.section}</h3>
                 <p className = "info-blurb">{skillPair.skills}</p>
             </div>
             )}
