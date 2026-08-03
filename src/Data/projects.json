@@ -15,6 +15,23 @@
             ["GDScript", "Plum"]
         ],
         "metaTags" : ["highlight", "featured", "digital"]
+    },    
+    
+    {
+        "title" : "Stuff Happens",
+        "description" : "Survive rounds of chaos in this online multiplayer party game." ,
+        "imgSrc" : "/assets/title_cards/SHUSW.png",
+        "refSrc" : "https://tapeknot.itch.io/stuff-happens-until-someone-wins",
+        "tagDict" : [
+            ["Programmer", "MediumSeaGreen"],
+            ["Artist", "MediumSeaGreen"],
+            ["Designer", "MediumSeaGreen"],
+            ["Audio", "MediumSeaGreen"],
+            ["Godot", "LightSeaGreen"],
+            ["Github", "LightSeaGreen"],
+            ["GDScript", "Plum"]
+        ],
+        "metaTags" : ["digital"]
     },
 
     {
@@ -124,6 +141,21 @@
             ["Programmer", "MediumSeaGreen"],
             ["Artist", "MediumSeaGreen"],
             ["Writer", "MediumSeaGreen"],
+            ["Designer", "MediumSeaGreen"],
+            ["Godot", "LightSeaGreen"],
+            ["Github", "LightSeaGreen"],
+            ["GDScript", "Plum"]
+        ],
+        "metaTags" : ["digital"]
+    }, 
+
+    {
+        "title" : "Mmmmm Hose",
+        "description" : "Navigate obstacles and put out fires as the town's #1 sentient fire hose." ,
+        "imgSrc" : "/assets/title_cards/mmmmm_hose.png",
+        "refSrc" : "https://tapeknot.itch.io/mmmmm-hose",
+        "tagDict" : [
+            ["Programmer", "MediumSeaGreen"],
             ["Designer", "MediumSeaGreen"],
             ["Godot", "LightSeaGreen"],
             ["Github", "LightSeaGreen"],
