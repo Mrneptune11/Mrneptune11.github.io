@@ -275,7 +275,37 @@ function SkillBlurb(skillBlurbProps:SkillBlurbProps) {
         </Container>
     );
 }
+
 ///////////////////////////////////////////////////////////////////////////////////////////
+
+
+//SCROLL COMPONENT/////////////////////////////////////////////////////////////////////////
+type PDProps = {
+    title:string,
+    link: string,
+    text: string,
+
+}
+
+function ProjectDescription(pdProps:PDProps) {
+
+    return(
+    <Container className = "project-description">
+        <Container className = 'title-container'>
+            <h2 >{pdProps.title}:</h2>
+            <a href={pdProps.link}>
+                <LinkedInIcon colorFill=""></LinkedInIcon>
+            </a>
+        </Container>
+        <text className = 'text-description'>
+            {pdProps.text}
+        </text>
+    </Container>
+    )
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////
+
 
 //SCROLL COMPONENT/////////////////////////////////////////////////////////////////////////
 //used to scroll to the top of page when rerouting
@@ -288,6 +318,6 @@ function ScrollToTop() {
 }
 ///////////////////////////////////////////////////////////////////////////////////////////
 
-export { ProjectCard, NavBar, ScrollToTop, TextBlurb, SocialBar,ProjectTag, SubBar, SkillBlurb};
+export { ProjectCard, NavBar, ScrollToTop, TextBlurb, SocialBar,ProjectTag, SubBar, SkillBlurb, ProjectDescription};
 
 export type {ProjectProps, MetaTag, SubBarItem, SkillBlurbProps};

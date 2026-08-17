@@ -182,6 +182,37 @@
 }
 /*//////////////////////////////////////////////////////////*/
 
+
+/*Project Page Information*/
+
+.project-description {
+    background-color: var(--dark_color);
+    margin-top: 10%;
+    max-width: 60%;
+    padding: 12px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 var(--shadow_color);
+    color: var(--primary_color);
+}
+
+.title-container {
+    display: flex;
+    justify-content: flex-start !important;
+    width: 100%;
+    gap: 10px;
+}
+
+.tag-container h2 {
+    margin: 0;
+}
+
+
+.project-description .text-description {
+    text-align: left;
+}
+
+/*//////////////////////////////////////////////////////////*/
+
 /*NavBar styling*/
 .navbar {
     z-index: 1000;
