@@ -187,7 +187,16 @@
 
 .project-description {
     background-color: var(--dark_color);
-    margin-top: 10%;
+    margin-top: 4%;
+    max-width: 60%;
+    padding: 12px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 var(--shadow_color);
+    color: var(--primary_color);
+}
+
+.my-contribution {
+    background-color: var(--dark_color);
     max-width: 60%;
     padding: 12px;
     border-radius: 10px;

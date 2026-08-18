@@ -288,6 +288,8 @@ type PDProps = {
 
 }
 
+
+
 function ProjectDescription(pdProps:PDProps) {
 
     return(
@@ -304,7 +306,34 @@ function ProjectDescription(pdProps:PDProps) {
         <text className = 'text-description'>
             {pdProps.text}
         </text>
-        <Container className = 'tag-container'>
+        <Container className = 'tag-container' style = {{scale: 1.4}}>
+            {pdProps.tagDict.map(([text, color], index) => (
+                <ProjectTag key = {index} bgColor={color} text = {text}>
+                </ProjectTag>
+            ))}
+        </Container>
+    </Container>
+    
+    )
+}
+
+function MyContribution(pdProps:PDProps) {
+
+    return(
+    <Container className = "my-contribution">
+        <Container className = 'title-container'>
+            <h2>{pdProps.title}:</h2>
+            <a href={pdProps.link}>
+                <button className = "link-text">
+                    Play on itch.io
+                    <LinkedInIcon colorFill="" classOverride="socialicon-text"/>
+                </button> 
+            </a>
+        </Container>
+        <text className = 'text-description'>
+            {pdProps.text}
+        </text>
+        <Container className = 'tag-container' style = {{scale: 1.4}}>
             {pdProps.tagDict.map(([text, color], index) => (
                 <ProjectTag key = {index} bgColor={color} text = {text}>
                 </ProjectTag>
@@ -329,6 +358,6 @@ function ScrollToTop() {
 }
 ///////////////////////////////////////////////////////////////////////////////////////////
 
-export { ProjectCard, NavBar, ScrollToTop, TextBlurb, SocialBar,ProjectTag, SubBar, SkillBlurb, ProjectDescription};
+export { ProjectCard, NavBar, ScrollToTop, TextBlurb, SocialBar,ProjectTag, SubBar, SkillBlurb, ProjectDescription, MyContribution};
 
 export type {ProjectProps, MetaTag, SubBarItem, SkillBlurbProps};
