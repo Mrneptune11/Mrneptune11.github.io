@@ -283,7 +283,8 @@ function SkillBlurb(skillBlurbProps:SkillBlurbProps) {
 type PDProps = {
     title:string,
     link: string,
-    text: string,
+    text: string, 
+    tagDict:Array<Array<string>>,
 
 }
 
@@ -292,15 +293,25 @@ function ProjectDescription(pdProps:PDProps) {
     return(
     <Container className = "project-description">
         <Container className = 'title-container'>
-            <h2 >{pdProps.title}:</h2>
+            <h2>{pdProps.title}:</h2>
             <a href={pdProps.link}>
-                <LinkedInIcon colorFill=""></LinkedInIcon>
+                <button className = "link-text">
+                    Play on itch.io
+                    <LinkedInIcon colorFill="" classOverride="socialicon-text"/>
+                </button> 
             </a>
         </Container>
         <text className = 'text-description'>
             {pdProps.text}
         </text>
+        <Container className = 'tag-container'>
+            {pdProps.tagDict.map(([text, color], index) => (
+                <ProjectTag key = {index} bgColor={color} text = {text}>
+                </ProjectTag>
+            ))}
+        </Container>
     </Container>
+    
     )
 }
 
