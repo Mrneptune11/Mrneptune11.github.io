@@ -42,6 +42,10 @@
         width: 100%;
         margin-top: 10px;
         padding-bottom: 2%;
+
+        min-width: 320px;
+        justify-self: center;
+
     }
 
     .about-container {
@@ -49,8 +53,10 @@
         display: flex;
         align-items: center;
         justify-content: flex-start;
-        gap: 1rem;
         flex-direction: column !important;
+
+        min-width: 320px;
+        justify-self: center;
         
     }
 
@@ -60,6 +66,7 @@
         padding-bottom: 2%;
         text-align: center;
     }
+
 }
 /*//////////////////////////////////////////////////////////*/
 
@@ -373,7 +380,7 @@
         flex-wrap: wrap;
         justify-content: center;
         gap: 5px;
-        margin-bottom: 5px;
+        margin-bottom: 10px;
     }
 
     .sub-bar button {
@@ -431,18 +438,21 @@
 
 @media (max-width: 768px) {
     .blurb-container {
-    background-color: var(--shade_color);
-    text-align: left;
-    justify-content: flex-start !important;
-    display: flex;
-    flex-direction: column;
-    width: 800px;
-    min-height: 400px;
-    gap: 2px !important;
+        background-color: var(--shade_color);
+        text-align: left;
+        justify-content: flex-start !important;
+        display: flex;
+        flex-direction: column;
+        width: 800px;
+        min-height: 400px;
+        gap: 2px !important;
 
-    border-radius: 2px;
-    box-shadow: 0 4px 8px 0 var(--shadow_color)
-}
+        border-radius: 2px;
+        box-shadow: 0 4px 8px 0 var(--shadow_color);
+
+        min-width: 300px;
+    }
+
 }
 
 /*//////////////////////////////////////////////////////////*/
