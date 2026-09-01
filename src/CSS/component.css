@@ -155,7 +155,7 @@
 .project-tag {
     border-radius: 20px;
     color: white;
-    font-size: clamp(1vh, .68vw, .8vw);
+    font-size: clamp(1.2vh, .68vw, .8vw);
     padding: 2px 8px;
 
 }
@@ -177,7 +177,7 @@
         max-width: 100%;
         height: auto;
         font: bold;
-        font-size: .6rem;
+        font-size: .8rem;
         text-transform: uppercase;
         background: linear-gradient(135deg, var(--primary_color), #aafffe, var(--primary_color));
         background-clip: text;
