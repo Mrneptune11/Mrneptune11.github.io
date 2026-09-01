@@ -2,6 +2,9 @@
 
 @import url('./style_var.css'); /*Import CSS variables and imports*/
 
+/* * {
+    outline: 1px solid red;
+} */
 
 /*Text Blurb styling*/
 
@@ -22,7 +25,7 @@
     font-size: clamp(.7rem, var(--base_font_size), 2rem);
 }
 
-.about-container {
+.about-box {
     margin-top: 10px;
     display: flex;
     align-items: flex-start;
@@ -48,15 +51,14 @@
 
     }
 
-    .about-container {
+    .about-box {
         margin-top: 5px;
         display: flex;
         align-items: center;
         justify-content: flex-start;
         flex-direction: column !important;
 
-        min-width: 320px;
-        justify-self: center;
+        width: 100%;
         
     }
 
@@ -65,6 +67,9 @@
         margin-top: 5px;
         padding-bottom: 2%;
         text-align: center;
+
+        min-width: 300px;
+
     }
 
 }
@@ -165,6 +170,7 @@
         max-width: 300px;
         color: var(--primary_color);
         min-height: 150px;
+        min-width: 260px;
     }
 
     .project-card .card-title {
@@ -184,7 +190,7 @@
     .project-card .card-description {
         max-width: 100%;
         height: auto;
-        font-size: .4rem;
+        font-size: .6rem;
     }
 }
 /*//////////////////////////////////////////////////////////*/
@@ -381,6 +387,7 @@
         justify-content: center;
         gap: 5px;
         margin-bottom: 10px;
+
     }
 
     .sub-bar button {
@@ -450,7 +457,7 @@
         border-radius: 2px;
         box-shadow: 0 4px 8px 0 var(--shadow_color);
 
-        min-width: 300px;
+        min-width: 320px;
     }
 
 }

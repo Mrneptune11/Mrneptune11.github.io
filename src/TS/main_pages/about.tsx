@@ -29,7 +29,7 @@ function About() {
     return (
         <div className="page">
             <br/>
-            <Container className = 'about-container'> 
+            <div className = 'about-box'> 
                 <img className = 'portrait' src = '/assets/portrait/it_me.png'></img>
                 <div className = 'about-text'>
                     <br/>
@@ -49,7 +49,7 @@ function About() {
                     }
                     />
                 </div>
-            </Container>
+            </div>
             <br/><br/>
             <SubBar items={items} setFilter = {setFilter}></SubBar>
             <Container className = 'info-container'>
